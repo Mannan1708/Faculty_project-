@@ -1,0 +1,983 @@
+[
+  {
+    "faculty_type":"adjunct",
+    "name":"Abhijit mukherjee",
+    "education":"MBA in Systems from Vinayaka Mission University",
+    "phone":null,
+    "address":null,
+    "email":"abhijit_mukherjee@dau.ac.in",
+    "specialization":"Enterprise Computing and SAP Systems (IS-U, S\/4 HANA), Data Privacy and Compliance (DPDP Act 2023), IT Strategy, Governance, and Data Analytics"
+  },
+  {
+    "faculty_type":"adjunct",
+    "name":"Aditi nath sarkar",
+    "education":"MA (South Asian Languages and Civilizations), University of Chicago, USA",
+    "phone":null,
+    "address":null,
+    "email":"aditinath_sarkar@dau.ac.in",
+    "specialization":"Literature, Religious, Cultural History; South Asian Civilization Studies"
+  },
+  {
+    "faculty_type":"adjunct",
+    "name":"Ajeet kumar singh",
+    "education":"MS by Research in Computer Science and Engineering",
+    "phone":null,
+    "address":null,
+    "email":"ajeetkumar_singh@dau.ac.in",
+    "specialization":"Computer Vision, Natural Language Processing, Adversarial Machine Learning"
+  },
+  {
+    "faculty_type":"adjunct",
+    "name":"Amishal modi",
+    "education":"PhD (English), Gujarat University",
+    "phone":"079-68261594",
+    "address":null,
+    "email":"amishal_modi@dau.ac.in",
+    "specialization":"Indian Literature, The English Novel, Sexuality Studies, 19th Century Literature"
+  },
+  {
+    "faculty_type":"adjunct",
+    "name":"Anjan ghosh",
+    "education":"PhD (Electrical Engineering), Carnegie Mellon University, Pittsburgh, Pennsylvania",
+    "phone":"079-68261645",
+    "address":"# 1111, FB-1, DA-IICT, Gandhinagar, Gujarat, India – 382007",
+    "email":"anjan_ghosh@dau.ac.in",
+    "specialization":"Optical Communication - Fiber Optic and Free Space, Photonic Devices and Subsystems, Sensors, Image and Signal Processing, Nonlinear Systems and Chaos, System Dynamics Modelling of Education"
+  },
+  {
+    "faculty_type":"adjunct",
+    "name":"Binay bhushan chakrabarti",
+    "education":"PhD (Economics), Jadavpur University Calcutta",
+    "phone":null,
+    "address":null,
+    "email":"binaybhushan_chakrabarti@dau.ac.in",
+    "specialization":"Finance"
+  },
+  {
+    "faculty_type":"adjunct",
+    "name":"Deepak ghodgaonkar",
+    "education":"PhD (Electrical Engineering), University of Utah, USA",
+    "phone":"079-68261623",
+    "address":"# 1103, FB-1, DA-IICT, Gandhinagar, Gujarat, India – 382007",
+    "email":"deepak_ghodgaonkar@dau.ac.in",
+    "specialization":"RF and Microwave Engineering, Microwave Nondestructive Testing of Composite Materials, Biomedical Applications of Microwaves, Electromagnetic Imaging of Complex Dielectric Bodies, Microwave Measurements and Characterization of Nonlinear Dielectric…"
+  },
+  {
+    "faculty_type":"adjunct",
+    "name":"Dhaval joshi",
+    "education":"Masters in Design (PGDPD): National Institute of Design, Gandhinagar",
+    "phone":null,
+    "address":null,
+    "email":"dhaval_joshi@dau.ac.in",
+    "specialization":"Design Research, Artificial Intelligence, Gaming, Customer engagement"
+  },
+  {
+    "faculty_type":"adjunct",
+    "name":"Dipankar nagchoudhuri",
+    "education":"PhD (Electrical Engineering), Michigan State University, USA",
+    "phone":"079-68261654",
+    "address":null,
+    "email":"dnc@dau.ac.in",
+    "specialization":"VLSI Design, CMOS Circuits and Technology, Biomedical Signal Processing Chip Design"
+  },
+  {
+    "faculty_type":"adjunct",
+    "name":"Gangeya mukherji",
+    "education":"PhD (The Vision of India in Tagore and Vivekananda), University of Allahabad",
+    "phone":"079-68261683",
+    "address":null,
+    "email":"gangeya_mukherji@dau.ac.in",
+    "specialization":"Intellectual history, 19th century India, Post-colonialism, Vivekananda, Tagore, Gandhi, Mahabharata."
+  },
+  {
+    "faculty_type":"adjunct",
+    "name":"Jayprakash lalchandani",
+    "education":"PhD (Computer Science), IIT Kharagpur",
+    "phone":"079-68261610",
+    "address":null,
+    "email":"jayprakash_lalchandani@dau.ac.in",
+    "specialization":"Software Engineering"
+  },
+  {
+    "faculty_type":"adjunct",
+    "name":"K narayana chandran",
+    "education":"PhD, Indian Institute of Technology Bombay",
+    "phone":null,
+    "address":null,
+    "email":"knarayana_chandran@dau.ac.in",
+    "specialization":"Major Areas of Specialization: English Poetry and Theory; English Pedagogy and Politics of the discipline; Indian and western narrative traditions Minor Specialization: Translation; Allusion, intertextuality and interge…"
+  },
+  {
+    "faculty_type":"adjunct",
+    "name":"Kalgi gandhi",
+    "education":"PhD - Thesis Submitted, DA-IICT Gandhinagar",
+    "phone":null,
+    "address":null,
+    "email":"kalgi_gandhi@dau.ac.in",
+    "specialization":"Database Management, Distributed Database Management, Edge Computing"
+  },
+  {
+    "faculty_type":"adjunct",
+    "name":"Kripabandhu ghosh",
+    "education":"<NA>",
+    "phone":null,
+    "address":"Department of Computational and Data Sciences, Indian Institute of Science Education and Research (IISER) Kolkata",
+    "email":"kripaghosh@iiserkol.ac.in",
+    "specialization":"Information Retrieval\/Data Mining\/AI on Legal Domain"
+  },
+  {
+    "faculty_type":"adjunct",
+    "name":"Kuntala dasgupta",
+    "education":"BSc, Calcutta University",
+    "phone":null,
+    "address":null,
+    "email":"sdg.dau@gmail.com",
+    "specialization":"Rabindra Sangeet, North Indian, Classical, India Film Music and History"
+  },
+  {
+    "faculty_type":"adjunct",
+    "name":"Nandini banerjee",
+    "education":"MA, M.Phil, PhD (International Economics), MA psychology in Psychotherapy and Counselling",
+    "phone":"079-68261620",
+    "address":"# 2110, FB-2, DA-IICT, Gandhinagar, Gujarat, India – 382007",
+    "email":"nandini_banerjee@dau.ac.in",
+    "specialization":"Economics, Psychology, Soft skills. Certifications in Basic counseling course – Counseling development program (CDP), Advanced counseling course (ADP), Theoretical and experiential training on Fundamentals of Cognitive Behavior Therapy (CBT)…"
+  },
+  {
+    "faculty_type":"adjunct",
+    "name":"Nikita desai",
+    "education":"PhD (Design), DA-IICT Gandhinagar",
+    "phone":"+91 9825169337",
+    "address":null,
+    "email":"nikita_d@dau.ac.in,nikitadesai82@gmail.com",
+    "specialization":"Interaction Design Immersive Experience Design"
+  },
+  {
+    "faculty_type":"adjunct",
+    "name":"Parth mehta",
+    "education":"PhD (Information and Communication Technology), DA-IICT Gandhinagar",
+    "phone":null,
+    "address":null,
+    "email":"parth_mehta@dau.ac.in",
+    "specialization":"Natural Language Processing, Large Language Models, Information Retrieval, Deep Learning"
+  },
+  {
+    "faculty_type":"adjunct",
+    "name":"Prashant grover",
+    "education":"B.Sc (Hons) - Animation & Multi., Birla Institute of Technology",
+    "phone":null,
+    "address":null,
+    "email":"prashant_grover@dau.ac.in",
+    "specialization":"Animation"
+  },
+  {
+    "faculty_type":"adjunct",
+    "name":"Prosenjit ganguly",
+    "education":"4yr Diploma (now B.Des) in Animation Film Design, NID",
+    "phone":null,
+    "address":null,
+    "email":"prosenjit_ganguly@dau.ac.in",
+    "specialization":"Animation Film Making, Screenwriting, Story-telling, Character Design, Photography, Illustration, Voice Acting"
+  },
+  {
+    "faculty_type":"adjunct",
+    "name":"Rudranil das",
+    "education":"Post Graduate Diploma in Textile Design, National Institute of Design (NID), Ahmedabad",
+    "phone":null,
+    "address":null,
+    "email":"rudranil_das@dau.ac.in",
+    "specialization":"Photography, Traveling, Research & Documentation on various crafts"
+  },
+  {
+    "faculty_type":"adjunct",
+    "name":"Samit bhattacharya",
+    "education":"PhD (Computer Science & Engineering), IIT Kharagpur",
+    "phone":null,
+    "address":null,
+    "email":"samit_bhattacharya@dau.ac.in",
+    "specialization":"Extended reality (virtual, augmented & mixed reality) Affective & ubiquitous systems Mobile & wearable systems & interactions ICT applications in education, agriculture, & h…"
+  },
+  {
+    "faculty_type":"adjunct",
+    "name":"Subhas chandra nandy",
+    "education":"PhD (Computer Science), University of Calcutta",
+    "phone":"079-68261717",
+    "address":"# 4105, FB-4, DAU, Gandhinagar, Gujarat, India – 382007",
+    "email":"subhas_nandy@dau.ac.in",
+    "specialization":"Algorithms, Data Structure, Graph Applications, Computational and Combinatorial Geometry"
+  },
+  {
+    "faculty_type":"adjunct",
+    "name":"Swati priya",
+    "education":"PhD (Heavy Metal Detection in Crops and Soil Clay Mineral Abundance Mapping using Hyperspectral Data),  DA-IICT Gandhinagar",
+    "phone":null,
+    "address":null,
+    "email":"swati_priya@dau.ac.in",
+    "specialization":"Remote sensing and GIS, Precision agriculture, and Crop modelling precision agriculture"
+  },
+  {
+    "faculty_type":"adjunct",
+    "name":"Troy vasanth",
+    "education":"PGDPD (Animation Film Design), NID, Ahmedabad",
+    "phone":null,
+    "address":null,
+    "email":"troy_vasanth@dau.ac.in",
+    "specialization":"Sound Design, 3D, Animation and Motion Design"
+  },
+  {
+    "faculty_type":"adjunct",
+    "name":"Umang shah",
+    "education":"PDP Programme, Aalto University, Finland",
+    "phone":null,
+    "address":null,
+    "email":"umang_shah@dau.ac.in",
+    "specialization":"a. Integrated Interdisciplinary Design b. Design and Technology c. Aesthetic Detailings and Manufacturing d. Radical and Incremental Innovation."
+  },
+  {
+    "faculty_type":"distinguished",
+    "name":"Vishvajit pandya",
+    "education":"PhD (Anthropology), University of Chicago, USA",
+    "phone":"079-68261543",
+    "address":"# 2105, FB-2, DA-IICT, Gandhinagar, Gujarat, India – 382007",
+    "email":"vishvajit_pandya@dau.ac.in",
+    "specialization":"Material Culture, Design and Communication Culture, Visual Anthropology, Anthropology of Space, Rituals and History with specific reference to Colonialism South East Asia"
+  },
+  {
+    "faculty_type":"international_adjunct",
+    "name":"Anil maheshwari",
+    "education":"PhD, TIFR Bombay",
+    "phone":null,
+    "address":null,
+    "email":"anil_maheshwari@dau.ac.in",
+    "specialization":"Design, Analysis and Implementation of Algorithms for Problems arising in Computational Geometry, Graph Theory, Discrete Mathematics, and Data Science."
+  },
+  {
+    "faculty_type":"international_adjunct",
+    "name":"Anthony r. noerpel",
+    "education":"MSc (Electrical Engineering), New Jersey Institute of Technology, USA",
+    "phone":null,
+    "address":null,
+    "email":"anthony_noerpel@dau.ac.in",
+    "specialization":"Cellular and Satellite Communication System Design, RF Propagation, Earth Systems Sciences."
+  },
+  {
+    "faculty_type":"international_adjunct",
+    "name":"Gabriella pasi",
+    "education":"PhD (Computer Science), University of Rennes, France",
+    "phone":null,
+    "address":null,
+    "email":"gabriella_pasi@dau.ac.in",
+    "specialization":"Information Retrieval, Information Filtering, Data Science, Fuzzy Logic"
+  },
+  {
+    "faculty_type":"international_adjunct",
+    "name":"Gaurav sharma",
+    "education":"<NA>",
+    "phone":null,
+    "address":"Professor of Electrical and Computer Engineering, University of Rochester, CSB 725, Box 270231, Rochester, NY 14627-0231 USA",
+    "email":"gaurav.sharma@rochester.edu",
+    "specialization":"Data Analytics, Cyber Physical Systems, Signal and Image Processing, Computer Vision, Media Security, Communications"
+  },
+  {
+    "faculty_type":"international_adjunct",
+    "name":"Nicholas belkin",
+    "education":"PhD (Information Studies), University College, University of London",
+    "phone":null,
+    "address":null,
+    "email":"nicholas_belkin@dau.ac.in",
+    "specialization":"Information Retrieval, and Interaction Design"
+  },
+  {
+    "faculty_type":"international_adjunct",
+    "name":"Nilotpal chakravarti",
+    "education":"PhD (Combinatorics and Optimization), University of Waterloo, USA",
+    "phone":null,
+    "address":null,
+    "email":"nilotpal_chakravarti@dau.ac.in",
+    "specialization":"None"
+  },
+  {
+    "faculty_type":"international_adjunct",
+    "name":"Ranjan pal",
+    "education":"PhD (Computer Science), Provost PhD Fellow (Highest Graduate Honor), University of Southern California (USC), Los Angeles, California, USA",
+    "phone":null,
+    "address":null,
+    "email":"ranjanpal9@gmail.com,ranjanp@mit.edu",
+    "specialization":"Cyber Risk Management, Cyber Resilience, Cybersecurity, Decision Science, Algorithmics, Applied Probability"
+  },
+  {
+    "faculty_type":"international_adjunct",
+    "name":"Rita chakravarti",
+    "education":"PhD (Multivariate Analysis), University of Pittsburgh",
+    "phone":null,
+    "address":null,
+    "email":"rita_chakravarti@dau.ac.in",
+    "specialization":"None"
+  },
+  {
+    "faculty_type":"international_adjunct",
+    "name":"S. lakshmivarahan",
+    "education":"PhD (Electrical Engineering), Indian Institute of Science, Bangalore",
+    "phone":null,
+    "address":null,
+    "email":"s_lakshmivarahan@dau.ac.in",
+    "specialization":"Big Data Analytics, Dynamic Data Assimilation and Its Applications, Multi-Agent Dynamics and Network Science, Interconnection Networks for Parallel Computers, Learning Algorithms and Computational Finance."
+  },
+  {
+    "faculty_type":"international_adjunct",
+    "name":"Stefano mizzaro",
+    "education":"PhD (Information Engineering), University of Trieste, Italy",
+    "phone":null,
+    "address":null,
+    "email":"mizzaro@uniud.it",
+    "specialization":"Information Retrieval, Artificial Intelligence"
+  },
+  {
+    "faculty_type":"international_adjunct",
+    "name":"Thomas mandl",
+    "education":"PhD (Information Science), University of Hildesheim, Germany",
+    "phone":null,
+    "address":null,
+    "email":"thomas_mandl@dau.ac.in",
+    "specialization":"Information Science, Cognitive Similarity Learning in Information Retrieval and Information Management"
+  },
+  {
+    "faculty_type":"professor_of_practice",
+    "name":"Ajay tomar",
+    "education":"I.P.S, (1989)",
+    "phone":null,
+    "address":null,
+    "email":"ajay_tomar@dau.ac.in",
+    "specialization":"Mr. Ajay Tomar was retired as the Commissioner of Police, Surat. He was recipient of Police Medal For Meritorious Service 2005 and also the President's Medal For Distinguished Service-2014. KNOW MORE"
+  },
+  {
+    "faculty_type":"professor_of_practice",
+    "name":"Anirban dutta gupta",
+    "education":"Graduate in Visual Communication Design, NID Ahmedabad",
+    "phone":null,
+    "address":null,
+    "email":"anirban_dutta@dau.ac.in",
+    "specialization":"Natural History & Ethnographic Documentary, Photography, Communication Design, Design for Development & Conservation"
+  },
+  {
+    "faculty_type":"professor_of_practice",
+    "name":"Harpreet singh jattana",
+    "education":"PhD - Pursuing (Microelectronics – SOI CMOS Process Integration & Modelling), IIT Roorkee",
+    "phone":"079-68261718",
+    "address":"# 3110, FB-3, DA-IICT, Gandhinagar, Gujarat, India – 382007",
+    "email":"harpreetsingh_jattana@dau.ac.in",
+    "specialization":"CMOS Process Development, Device Reliability, CMOS Design, Compound Semiconductors, VLSI Testing & Packaging, Wafer Fabrication"
+  },
+  {
+    "faculty_type":"professor_of_practice",
+    "name":"K c supekar",
+    "education":"PhD (Agricultural Economics), Gokhale Institute of Politics and Economics, Pune (GIPE)",
+    "phone":null,
+    "address":null,
+    "email":"kc_supekar@dau.ac.in",
+    "specialization":"Dr. Supekar has an extensive experience of about 40 years of cooperative dairy sector in India which ranges from small and marginal farmers at grassroots level to serving as Managing Director of NCDFI for about 13 years. The key areas of interest include upliftment of the rural farmers & women empowerment to bring social and cultural change and bringing in the digital technologies to revamp the Indian rural ecosystem."
+  },
+  {
+    "faculty_type":"regular",
+    "name":"Abhishek gupta",
+    "education":"PhD (Electrical and Computer Engineering), Toronto Metropolitan University, Canada",
+    "phone":"079-68261598",
+    "address":"# 3208, FB-3, DAU, Gandhinagar, Gujarat, India – 382007",
+    "email":"abhishek_gupta@dau.ac.in",
+    "specialization":"Machine Learning, Statistical Signal Processing, RF Communications, Computer Vision, Autonomous Vehicles"
+  },
+  {
+    "faculty_type":"regular",
+    "name":"Abhishek jindal",
+    "education":"PhD (Electronics & Communication Engineering), IIT Delhi",
+    "phone":"079-68261654",
+    "address":"# 4101, FB-4, DA-IICT, Gandhinagar, Gujarat, India – 382007",
+    "email":"abhishek_jindal@dau.ac.in",
+    "specialization":"Reinforcement Learning, Deep Learning for Finance and Cyber Security, Wireless Communication, Cyber-Physical Systems, Information Security"
+  },
+  {
+    "faculty_type":"regular",
+    "name":"Abhishek tilva",
+    "education":"PhD (Statistics), Columbia University, New York, USA",
+    "phone":"079-68261549",
+    "address":"# 2209, FB-2, DA-IICT, Gandhinagar, Gujarat, India – 382007",
+    "email":"abhishek_tilva@dau.ac.in",
+    "specialization":"Arbitrage Theory, Stochastic Portfolio Theory, Stochastic Analysis"
+  },
+  {
+    "faculty_type":"regular",
+    "name":"Aditya tatu",
+    "education":"PhD (Computer Science), University of Copenhagen, Denmark",
+    "phone":"079-68261540",
+    "address":"#1206, FB-1, DA-IICT, Gandhinagar, Gujarat, India – 382007",
+    "email":"aditya_tatu@dau.ac.in",
+    "specialization":"Computer Vision, Image Processing, Pattern Recognition, Signal Processing"
+  },
+  {
+    "faculty_type":"regular",
+    "name":"Ajay beniwal",
+    "education":"PhD (Electronics and Communication Engineering), IIIT Allahabad",
+    "phone":"079-68261745",
+    "address":"# 3211, FB-3, DA-IICT, Gandhinagar, Gujarat, India – 382007",
+    "email":"ajay_beniwal@dau.ac.in",
+    "specialization":"Flexible and Printable Electronics for Healthcare and Digital Agricultural Applications, Smart Sensing Technologies with Wireless Connectivity, Sensor Materials and Nanocomposites, Sustainable and Green Electronics."
+  },
+  {
+    "faculty_type":"regular",
+    "name":"Amit mankodi",
+    "education":"PhD, DA-IICT Gandhinagar",
+    "phone":null,
+    "address":"# 4205, FB-4, DA-IICT, Gandhinagar, Gujarat, India – 382007",
+    "email":"amit_mankodi@dau.ac.in",
+    "specialization":"Embedded Systems, Computer Networks, High Performance Computing, Machine Learning"
+  },
+  {
+    "faculty_type":"regular",
+    "name":"Anil roy (on leave)",
+    "education":"PhD (Physics), IIT Delhi",
+    "phone":"079-68261613",
+    "address":"# 1104, FB-1, DA-IICT, Gandhinagar, Gujarat, India – 382007",
+    "email":"anil_roy@dau.ac.in",
+    "specialization":"Applications of Image Processing, Fiber Optics and Optical Communication, High speed Semiconductor Devices, Nanoscience and Nanotechnology, Quantum Optics, Technologies for Humanitarian Challenges."
+  },
+  {
+    "faculty_type":"regular",
+    "name":"Anish mathuria",
+    "education":"PhD (Computer Science), University of Wollongong, Australia",
+    "phone":"079-68261541",
+    "address":"# 1105, FB-1, DA-IICT, Gandhinagar, Gujarat, India – 382007",
+    "email":"anish_mathuria@dau.ac.in",
+    "specialization":"Network Security, Privacy-Preserving Computation, System and Software Security"
+  },
+  {
+    "faculty_type":"regular",
+    "name":"Ankit vijayvargiya",
+    "education":"PhD (Biomedical Signals), Malaviya National Institute of Technology, Jaipur",
+    "phone":"079-68261628",
+    "address":"# 4205, FB-4, DAU, Gandhinagar, Gujarat, India – 382007",
+    "email":"ankit_vijayvargiya@dau.ac.in",
+    "specialization":"Biomedical Signals, Machine Learning, Neural Rehabilitation, Gait Analysis"
+  },
+  {
+    "faculty_type":"regular",
+    "name":"Ankush chander",
+    "education":"M.Tech. (ICT), DA-IICT Gandhinagar",
+    "phone":"079-68261581",
+    "address":"# 3209, FB-3, DA-IICT, Gandhinagar, Gujarat, India – 382007",
+    "email":"ankush_chander@dau.ac.in",
+    "specialization":"Natural Language Processing, Information Retrieval, Operating systems"
+  },
+  {
+    "faculty_type":"regular",
+    "name":"Anupam rana",
+    "education":"PhD (Design Management) - Retails Experience-CX, Indus University, Ahmedabad",
+    "phone":"079-68261538",
+    "address":"#3210, FB-3, DA-IICT, Gandhinagar, Gujarat, India – 382007",
+    "email":"anupam_rana@dau.ac.in",
+    "specialization":"Design Education, Experience Design, Multidisciplinary Research, UIUX, Design Thinking."
+  },
+  {
+    "faculty_type":"regular",
+    "name":"Arnab kumar ray",
+    "education":"PhD (Physics), Jadavpur University, Kolkata",
+    "phone":"079-68261612",
+    "address":"# 2210, FB-2, DA-IICT, Gandhinagar, Gujarat, India – 382007",
+    "email":"arnab_kumar@dau.ac.in",
+    "specialization":"Astrophysical Accretion, Fluid Dynamics, Nonlinear Systems"
+  },
+  {
+    "faculty_type":"regular",
+    "name":"Arpit rana",
+    "education":"PhD (Computer Science), University College Cork, Ireland",
+    "phone":"079-68261687",
+    "address":"#3105, FB-3, DA-IICT, Gandhinagar, Gujarat, India – 382007",
+    "email":"arpit_rana@dau.ac.in",
+    "specialization":"Applied Machine Learning, Recommendation Systems, Multimodality, and their applications in Digital Innovation and Transformation"
+  },
+  {
+    "faculty_type":"regular",
+    "name":"Arpita mal",
+    "education":"PhD (Mathematics), Jadavpur University, Kolkata",
+    "phone":"079-68261660",
+    "address":"# 3104, FB-3, DA-IICT, Gandhinagar, Gujarat, India – 382007",
+    "email":"arpita_mal@dau.ac.in",
+    "specialization":"None"
+  },
+  {
+    "faculty_type":"regular",
+    "name":"Bharani kollipara",
+    "education":"PhD (English), The English and Foreign Languages University, Hyderabad",
+    "phone":"079-68261558",
+    "address":"# 2102, FB-2, DA-IICT, Gandhinagar, Gujarat, India – 382007",
+    "email":"bharani_kollipara@dau.ac.in",
+    "specialization":"Modern Philosophy, Phenomenology and Hermeneutics, Literary Modernism"
+  },
+  {
+    "faculty_type":"regular",
+    "name":"Bhaskar chaudhury",
+    "education":"PhD (Computational Plasma Physics), IPR, Gandhinagar",
+    "phone":"079-68261590",
+    "address":"# 2204, FB-2, DA-IICT, Gandhinagar, Gujarat, India – 382007",
+    "email":"bhaskar_chaudhury@dau.ac.in",
+    "specialization":"Computational Plasma Physics, Computational Data Science, High Performance Scientific Meet Prof. Bhaskar Chaudhury! Computing, Parallel Prog…"
+  },
+  {
+    "faculty_type":"regular",
+    "name":"Biswajit mishra",
+    "education":"PhD (Electrical & Electronics Engineering), University of Southampton, UK",
+    "phone":"079-68261561",
+    "address":"# 2104, FB-2, DA-IICT, Gandhinagar, Gujarat, India – 382007",
+    "email":"biswajit_mishra@dau.ac.in",
+    "specialization":"Ultra Low Power and Sub-threshold Circuit Methodologies, Very Low Voltage Circuits for Wireless Sensor Networks, Digital IC Design, Power Management for Energy Harvesters, Signal Processing Hardware for Color Image Processing, Geometric Algebra an…"
+  },
+  {
+    "faculty_type":"regular",
+    "name":"Gautam dutta",
+    "education":"PhD (Physics), Physical Research Laboratory, Ahmedabad",
+    "phone":"079-68261631",
+    "address":"# 1110, FB-1, DA-IICT, Gandhinagar, Gujarat, India – 382007",
+    "email":"gautam_dutta@dau.ac.in",
+    "specialization":"Theoretical physics"
+  },
+  {
+    "faculty_type":"regular",
+    "name":"Gopinath panda",
+    "education":"PhD (Mathematics), IIT Bhubaneswar",
+    "phone":"079-68261716",
+    "address":"# 3203, FB-3, DA-IICT, Gandhinagar, Gujarat, India – 382007",
+    "email":"gopinath_panda@dau.ac.in",
+    "specialization":"Probability and Statistics"
+  },
+  {
+    "faculty_type":"regular",
+    "name":"Hemant patil",
+    "education":"PhD (Computer Science), IIT Kharagpur",
+    "phone":"079-68261650, Lab: 079-68261587",
+    "address":"Office: # 4103, FB-4, DA-IICT, Gandhinagar, Gujarat, India – 382007. Lab: CEP 006, Speech Lb, DA-IICT, Gandhinagar, Gujarat, India – 382007",
+    "email":"hemant_patil@dau.ac.in,hemant_patil1977@yahoo.com",
+    "specialization":"Speech Signal Processing, Speech and Speaker Recognition (Voice Biometrics), Development of Countermeasures for Spoofing Attacks on Automatic Speaker Verification, Voice Conversion"
+  },
+  {
+    "faculty_type":"regular",
+    "name":"Jenson joseph",
+    "education":"PhD (Communication), University of Hyderabad, Hyderabad",
+    "phone":"079-68261536",
+    "address":"# 3205, FB-3, DA-IICT, Gandhinagar, Gujarat, India – 382007",
+    "email":"jenson_joseph@dau.ac.in",
+    "specialization":"History and theory of Media, Film Studies, Cultural Studies, Malayalam Cinema, Popular Culture"
+  },
+  {
+    "faculty_type":"regular",
+    "name":"Madhu kant sharma",
+    "education":"PhD (Mathematics), IIT Madras",
+    "phone":"079-68261554",
+    "address":"# 1109, FB-1 , DA-IICT, Gandhinagar, Gujarat, India – 382007",
+    "email":"madhukant_sharma@dau.ac.in",
+    "specialization":"Fractional Differential Equations (FDEs), Optimization, Numerical Methods for FDEs, Signal Processing"
+  },
+  {
+    "faculty_type":"regular",
+    "name":"Madhumita mazumdar",
+    "education":"PhD (Modern History), University of Calcutta, Calcutta",
+    "phone":"079-68261562",
+    "address":"# 2111, FB-2, DA-IICT, Gandhinagar, Gujarat, India – 382007",
+    "email":"madhumita_mazumdar@dau.ac.in",
+    "specialization":"Social and Cultural History Science, Technology and Design, History of Modernity and Developmental Practice in Colonial and Post-Colonial India, Economic and Social History of Gujarat"
+  },
+  {
+    "faculty_type":"regular",
+    "name":"Maniklal das",
+    "education":"PhD (Computer Science), IIT Bombay",
+    "phone":"079-68261617, Fax: (+91) 079-68261710",
+    "address":"# 2103, FB-2, DA-IICT, Gandhinagar, Gujarat, India – 382007",
+    "email":"maniklal_das@dau.ac.in",
+    "specialization":"Cyber Security, Privacy, Cryptography, Algorithms"
+  },
+  {
+    "faculty_type":"regular",
+    "name":"Manish chaturvedi",
+    "education":"PhD (ICT), DA-IICT, Gandhinagar",
+    "phone":"079-68261645",
+    "address":"# 1111, FB-1, DA-IICT, Gandhinagar, Gujarat, India – 382007",
+    "email":null,
+    "specialization":"Design of Intelligent Transportation Systems, Communication Protocol Design, Embedded Systems and Internet of Things"
+  },
+  {
+    "faculty_type":"regular",
+    "name":"Manish kumar",
+    "education":"PhD (Electrical Engineering), IIT Patna",
+    "phone":"079-68261678",
+    "address":"# 3102, FB-3, DA-IICT, Gandhinagar, Gujarat, India – 382007",
+    "email":"manish_kumar@dau.ac.in",
+    "specialization":"Algorithm Development and Performance Optimization in UAV Networks, Sensor & Ad-Hoc Networks; Applications of AI\/ML, Blockchain in Networks; Internet of Things; Next Generation Wireless Networks: 5G\/6G"
+  },
+  {
+    "faculty_type":"regular",
+    "name":"Manjunath v. joshi",
+    "education":"PhD (Electrical Engineering), IIT Bombay",
+    "phone":"079-68261611",
+    "address":"# 1203, FB-1, DA-IICT, Gandhinagar, Gujarat, India – 382007",
+    "email":"mv_joshi@dau.ac.in",
+    "specialization":"Signal and Image Processing, Digital Communication, Computer Vision, Machine Learning"
+  },
+  {
+    "faculty_type":"regular",
+    "name":"Manoj raut",
+    "education":"PhD (Mathematics), IIT Madras",
+    "phone":"079-68261585",
+    "address":"# 4112, FB-4, DA-IICT, Gandhinagar, Gujarat, India – 382007",
+    "email":"manoj_raut@dau.ac.in",
+    "specialization":"Mathematical Logic"
+  },
+  {
+    "faculty_type":"regular",
+    "name":"Minal bhise",
+    "education":"PhD (Computer Science), BITS Pilani",
+    "phone":"079-68261548",
+    "address":"# 1209, FB-1, DA-IICT, Gandhinagar, Gujarat, India – 382007",
+    "email":"minal_bhise@dau.ac.in",
+    "specialization":"Distributed Databases - Query Processing, Application Development for Biodiversity Domain, Software System Analysis and Design"
+  },
+  {
+    "faculty_type":"regular",
+    "name":"Mukesh tiwari",
+    "education":"PhD (Optical Science & Engineering), University of New Mexico, USA",
+    "phone":"079-68261614",
+    "address":"# 1112, FB-1, DA-IICT, Gandhinagar, Gujarat, India – 382007",
+    "email":"mukesh_tiwari@dau.ac.in",
+    "specialization":"Nonequilibrium statistical mechanics and Nonlinear dynamics"
+  },
+  {
+    "faculty_type":"regular",
+    "name":"Nabin kumar sahu",
+    "education":"PhD (Mathematics), IIT Kharagpur",
+    "phone":"079-68261642",
+    "address":"# 4212, FB-4, DA-IICT, Gandhinagar, Gujarat, India – 382007",
+    "email":"nabinkumar_sahu@dau.ac.in",
+    "specialization":"Frame Theory, Optimization Theory and Applications, Variational Inequalities"
+  },
+  {
+    "faculty_type":"regular",
+    "name":"P m jat",
+    "education":"PhD (Computer Science and Engineering), ML Sukhadia University, Udaipur",
+    "phone":"079-68261641",
+    "address":"# 2203, FB-2, DA-IICT, Gandhinagar, Gujarat, India – 382007",
+    "email":"pm_jat@dau.ac.in",
+    "specialization":"Databases"
+  },
+  {
+    "faculty_type":"regular",
+    "name":"P s kalyan sasidhar",
+    "education":"PhD (Computer Science and Engineering), University of North Texas-Denton, USA",
+    "phone":"079-68261560",
+    "address":"# 2109, FB-2, DA-IICT, Gandhinagar, Gujarat, India – 382007",
+    "email":"kalyan_sasidhar@dau.ac.in",
+    "specialization":"Meet Dr. Kalyan Sasidhar : Pioneering Mobile Computing and Network Sensing Mobile and Pervasive Computing which include Wireless Sensor Networks, Mo…"
+  },
+  {
+    "faculty_type":"regular",
+    "name":"Pankaj kumar",
+    "education":"PhD (RF & Microwave), NIT Patna",
+    "phone":"079-68261705",
+    "address":"# 3201, FB-3, DA-IICT, Gandhinagar, Gujarat, India – 382007",
+    "email":"pankaj_kumar@dau.ac.in",
+    "specialization":"Bio-Inspired Metasurface\/Metamaterial Devices, Terahertz Devices, Semiconductor Device Modeling and Simulation, Emerging Devices, JLT, OFET, TFET, FIN-FET, VLSI Design."
+  },
+  {
+    "faculty_type":"regular",
+    "name":"Parul gupta",
+    "education":"PhD (Economics), IIT Delhi",
+    "phone":"079-68261744",
+    "address":"# 4102, FB-4, DAU, Gandhinagar, Gujarat, India – 382007",
+    "email":"parul_gupta@dau.ac.in",
+    "specialization":"Economic Development, Education Policy, Economics of Gender"
+  },
+  {
+    "faculty_type":"regular",
+    "name":"Prasenjit majumder (on leave)",
+    "education":"PhD (Computer Science), Jadavpur University",
+    "phone":"079-68261605",
+    "address":"# 4209, FB-4, DA-IICT, Gandhinagar, Gujarat, India – 382007",
+    "email":"p_majumder@dau.ac.in,prasenjit.majumder@gmail.com",
+    "specialization":"Natural Language Processing, Information Retrieval, Cognitive Science"
+  },
+  {
+    "faculty_type":"regular",
+    "name":"Pratim roy",
+    "education":"PhD (Physics),  IIT Kanpur",
+    "phone":"079-68261627",
+    "address":"# 4211, FB-4, DA-IICT, Gandhinagar, Gujarat, India – 382007",
+    "email":"pratim_roy@dau.ac.in",
+    "specialization":"Theoretical Physics, ADS\/CFT Duality, Quantum Field Theory"
+  },
+  {
+    "faculty_type":"regular",
+    "name":"Pritam anand",
+    "education":"PhD (Computer Science), South Asian University, New Delhi",
+    "phone":"079-68261657",
+    "address":"# 3103, FB-3, DA-IICT, Gandhinagar, Gujarat, India – 382007",
+    "email":"pritam_anand@dau.ac.in",
+    "specialization":"Support Vector Machines, Loss Functions, Regression, Extreme Learning Machine, Quantile Regression"
+  },
+  {
+    "faculty_type":"regular",
+    "name":"Prosenjit kundu",
+    "education":"PhD (Mathematics), National Institute of Technology, Durgapur",
+    "phone":"079-68261559",
+    "address":"# 2211, FB-2, DA-IICT, Gandhinagar, Gujarat, India – 382007",
+    "email":"prosenjit_kundu@dau.ac.in,jitprosen.math@gmail.com",
+    "specialization":"Physics and Mathematical Sciences, Applied Mathematics, Complex Networks, Dynamical Systems"
+  },
+  {
+    "faculty_type":"regular",
+    "name":"Puneet bhateja",
+    "education":"PhD (Computer Science), Chennai Mathematical Institute",
+    "phone":"079-68261647",
+    "address":"# 2101, FB-2, DA-IICT, Gandhinagar, Gujarat, India – 382007",
+    "email":"puneet_bhateja@dau.ac.in",
+    "specialization":"Theoretical Computer Science"
+  },
+  {
+    "faculty_type":"regular",
+    "name":"Purbasha das",
+    "education":"PhD (History), Jawaharlal Nehru University, New Delhi",
+    "phone":"079-68261653",
+    "address":"# 4210, FB-4, DA-IICT, Gandhinagar, Gujarat, India – 382007",
+    "email":"purbasha_das@daiict.ac.in",
+    "specialization":"History of Transport and Communication, Urban History, Legal and Social History"
+  },
+  {
+    "faculty_type":"regular",
+    "name":"Pushpendra kumar",
+    "education":"PhD (Mathematics), National Institute of Technology Puducherry",
+    "phone":"079-68261649",
+    "address":"# 4109, FB-4, DAU, Gandhinagar, Gujarat, India – 382007",
+    "email":"pushpendra_kumar@dau.ac.in",
+    "specialization":"Fractional Calculus, Mathematical Modeling, Numerical Analysis, and Neural Networks"
+  },
+  {
+    "faculty_type":"regular",
+    "name":"Rachit chhaya",
+    "education":"PhD (Computer Science), IIT Gandhinagar",
+    "phone":"079-68261708",
+    "address":"# 3109, FB-3, DA-IICT, Gandhinagar, Gujarat, India – 382007",
+    "email":"rachit_chhaya@dau.ac.in",
+    "specialization":"Coresets for Machine Learning"
+  },
+  {
+    "faculty_type":"regular",
+    "name":"Rahul muthu",
+    "education":"PhD (Mathematics), Homi Bhabha National Institute, Mumbai",
+    "phone":"079-68261564, 9586478239",
+    "address":"# 1202, FB-1, DA-IICT, Gandhinagar, Gujarat, India – 382007",
+    "email":"rahul_muthu@dau.ac.in",
+    "specialization":"Graph Theory, Data Structures, Algorithms, Automata Theory"
+  },
+  {
+    "faculty_type":"regular",
+    "name":"Rajib lochan das",
+    "education":"PhD (Electronics & Electrical Communication Engineering), IIT Kharagpur",
+    "phone":"079-68261597",
+    "address":"# 4202, FB-4, DA-IICT, Gandhinagar, Gujarat, India – 382007",
+    "email":"rajib_das@dau.ac.in",
+    "specialization":"Adaptive Signal Processing, Compressive Sensing, Machine Learning, Image Processing, Graph Signal Processing"
+  },
+  {
+    "faculty_type":"regular",
+    "name":"Ratna bharati bhamidipati",
+    "education":"PhD (Sociology), Dr B R Ambedkar University, Delhi",
+    "phone":"079-68261589",
+    "address":"# 2202, FB-2, DA-IICT, Gandhinagar, Gujarat, India – 382007",
+    "email":"ratna_bharati@dau.ac.in",
+    "specialization":"Diaspora , Transnationalism, Migrant Subjectivity"
+  },
+  {
+    "faculty_type":"regular",
+    "name":"Rutu parekh",
+    "education":"PhD (Electrical Engineering), Sherbrooke University, Canada",
+    "phone":"079-68261553",
+    "address":"# 2112, FB-2, DA-IICT, Gandhinagar, Gujarat, India – 382007",
+    "email":"rutu_parekh@dau.ac.in",
+    "specialization":"High-Voltage ASIC Design for Space Applications, Nanoelectronics and Emerging Devices, Embedded Systems and IoT Applications, Long-Distance Wireless Communication Systems, Smart Agriculture and Environmental Monitoring, Memristor-based Neuromorphi…"
+  },
+  {
+    "faculty_type":"regular",
+    "name":"Sandip modha",
+    "education":"PhD, DA-IICT Gandhinagar",
+    "phone":"079-68261672",
+    "address":"# 2201, FB-2, DAU, Gandhinagar, Gujarat, India – 382007",
+    "email":"sandip_modha@dau.ac.in",
+    "specialization":"Natural Language Processing (NLP), Information Retrieval (IR), Evaluation Methodologies, and Computational Approaches to Social Media Data."
+  },
+  {
+    "faculty_type":"regular",
+    "name":"Sanjay srivastava",
+    "education":"PhD (Physics), University of California, Los Angeles, USA",
+    "phone":"079-68261547",
+    "address":"# 1205, FB-1, DA-IICT, Gandhinagar, Gujarat, India – 382007",
+    "email":"sanjay_srivastava@dau.ac.in",
+    "specialization":"Internet of Things, Protocol Modelling and Analysis, Simulation"
+  },
+  {
+    "faculty_type":"regular",
+    "name":"Satvik gupta",
+    "education":"PhD (English Literature), IIT Ropar",
+    "phone":"079-68261655",
+    "address":"# 4105, FB-4, DA-IICT, Gandhinagar, Gujarat, India – 382007",
+    "email":"satvik_gupta@dau.ac.in",
+    "specialization":"Weird Fiction, Horror Fiction, Speculative Fiction, World Literature, Existentialism, Absurdism"
+  },
+  {
+    "faculty_type":"regular",
+    "name":"Saurabh tiwari",
+    "education":"PhD (Computer Science & Engineering), IIITDM, Jabalpur",
+    "phone":"079-68261618",
+    "address":"# 1102, FB-1, DA-IICT, Gandhinagar, Gujarat, India – 382007",
+    "email":"saurabh_t@dau.ac.in",
+    "specialization":"Meet Prof. Saurabh Tiwari: The realm of Software Engineering and Innovation! Software Engineering (SE), Mining Software Repositories, Natural Langua…"
+  },
+  {
+    "faculty_type":"regular",
+    "name":"Sayantan paul",
+    "education":"PhD (Statistics) - Thesis Submitted",
+    "phone":"079-68261752",
+    "address":"# 3202, FB-3, DAU, Gandhinagar, Gujarat, India – 382007",
+    "email":"sayantan_paul@dau.ac.in",
+    "specialization":"High-dimensional Inference, Multiple Testing, Posterior Concentration, Variable Selection, Sparse Signal Recovery"
+  },
+  {
+    "faculty_type":"regular",
+    "name":"Shefali jha",
+    "education":"PhD (Anthropology), University of Chicago, USA",
+    "phone":"079-68261709",
+    "address":"# 3112, FB-3 , DA-IICT, Gandhinagar, Gujarat, India – 382007",
+    "email":"shefali_jha@dau.ac.in",
+    "specialization":"Political Anthropology, Cultural Studies, Feminist Theory, Film Studies, Literary and Visual Cultures in South Asia"
+  },
+  {
+    "faculty_type":"regular",
+    "name":"Shruti bhilare",
+    "education":"PhD (Computer Science and Engineering), IIT Indore",
+    "phone":"079-68261651",
+    "address":"# 4208, FB-4, DA-IICT, Gandhinagar, Gujarat, India – 382007",
+    "email":"shruti_bhilare@dau.ac.in",
+    "specialization":"Biometrics, Pattern Recognition, Image Processing"
+  },
+  {
+    "faculty_type":"regular",
+    "name":"Sourish dasgupta",
+    "education":"PhD (Computer Science), University of Missouri - Kansas City, USA",
+    "phone":"079-68261624, 9624106109",
+    "address":"# 4102, FB-4, DA-IICT, Gandhinagar, Gujarat, India – 382007",
+    "email":"sourish_dasgupta@dau.ac.in",
+    "specialization":"Natural Language Processing, Knowledge Graphs, Analysis of Large Language Models"
+  },
+  {
+    "faculty_type":"regular",
+    "name":"Sreeja rajendran",
+    "education":"PhD (Electrical and Electronics Engineering), Birla Institute of Technology and Science, Pilani, Dubai Campus",
+    "phone":"079-68261707",
+    "address":"#3108, FB-3, DA-IICT, Gandhinagar, Gujarat, India – 382007",
+    "email":"sreeja_rajendran@dau.ac.in",
+    "specialization":"VLSI, Embedded Systems and MEMS, Hardware Security, VLSI Test"
+  },
+  {
+    "faculty_type":"regular",
+    "name":"Srimanta mandal",
+    "education":"PhD (Computing and Electrical Engineering), IIT Mandi",
+    "phone":"079-68261621",
+    "address":"# 4203, FB-4, DA-IICT, Gandhinagar, Gujarat, India – 382007",
+    "email":"srimanta_mandal@dau.ac.in",
+    "specialization":"Image Processing, Computer Vision, Machine Learning"
+  },
+  {
+    "faculty_type":"regular",
+    "name":"Subhasish basak",
+    "education":"PhD (Statistics), Indian Statistical Institute, Kolkata",
+    "phone":"079-68261671",
+    "address":"# 3206, FB-3, DAU, Gandhinagar, Gujarat, India – 382007",
+    "email":"subhasish_basak@dau.ac.in",
+    "specialization":"Image Processing, Statistical Learning, Nonparametric Methods, Decision trees, Bayesian techniques, Quality monitoring"
+  },
+  {
+    "faculty_type":"regular",
+    "name":"Sudip bera",
+    "education":"PhD (Mathematics), Visva-Bharati University, Shantiniketan, West Bengal",
+    "phone":"079-68261632",
+    "address":"# 4201, FB-4, DA-IICT, Gandhinagar, Gujarat, India – 382007",
+    "email":"sudip_bera@dau.ac.in",
+    "specialization":"Algebraic graph theory, Algebraic combinatorics"
+  },
+  {
+    "faculty_type":"regular",
+    "name":"Sujay kadam",
+    "education":"PhD (Electrical Engineering), IIT Gandhinagar",
+    "phone":"079-68261584",
+    "address":"# 1210, FB-1, DA-IICT, Gandhinagar, Gujarat, India – 382007",
+    "email":"sujay_kadam@dau.ac.in",
+    "specialization":"Instrumentation, Systems and Control Theory, Human-Motor Learning, Robotics"
+  },
+  {
+    "faculty_type":"regular",
+    "name":"Sunitha v",
+    "education":"PhD (Mathematics), IIT Madras",
+    "phone":"079-68261563",
+    "address":"# 1212, FB-1, DA-IICT, Gandhinagar, Gujarat, India – 382007",
+    "email":"v_suni@dau.ac.in",
+    "specialization":"Theory, Algorithms (Parallel, Distributed, Dynamic), Applications of Graphs"
+  },
+  {
+    "faculty_type":"regular",
+    "name":"Supantha pandit",
+    "education":"PhD (Computer Science), IIT Ropar",
+    "phone":"079-68261546",
+    "address":"# 2205, FB-2, DA-IICT, Gandhinagar, Gujarat, India – 382007",
+    "email":"supantha_pandit@dau.ac.in",
+    "specialization":"Theoretical Computer Science Mainly focused on: Computational Geometry Approximation Algorithms Distributed Network and Agent Algorithms Graph Algorithms"
+  },
+  {
+    "faculty_type":"regular",
+    "name":"Tapas kumar maiti",
+    "education":"PhD (Electronics & Telecommunication Engineering), Jadavpur University, Kolkata",
+    "phone":"079-68261637",
+    "address":"# 2206, FB-2, DA-IICT, Gandhinagar, Gujarat, India – 382007",
+    "email":"tapas_kumar@dau.ac.in",
+    "specialization":"Meet Dr. Tapas Kumar Maiti: Pioneering Research in Robotics and Cybernetics Intelligent Devices and  Systems Robotics AI-Chip Cyber…"
+  },
+  {
+    "faculty_type":"regular",
+    "name":"Tathagata bandyopadhyay",
+    "education":"PhD (Statistics), University of Calcutta, Kolkata",
+    "phone":"079-68261572",
+    "address":null,
+    "email":"tathagata_b@dau.ac.in",
+    "specialization":"Statistical Inference, Survey Sampling, Discrete Data Modeling and Analysis, Applications of Statistical Methodologies in Various Fields"
+  },
+  {
+    "faculty_type":"regular",
+    "name":"Vinay palaparthy",
+    "education":"PhD (Electrical Engineering), IIT Bombay",
+    "phone":"079-68261677",
+    "address":"# 1208, FB-1, DA-IICT, Gandhinagar, Gujarat, India – 382007",
+    "email":"vinay_shrinivas@dau.ac.in",
+    "specialization":"Micro-Electro-Mechanical Systems (MEMS), Physics of Sensors, 2D materials, Memristor, Self-healing System Design, Embedded System Design, IoT, AI\/ML"
+  },
+  {
+    "faculty_type":"regular",
+    "name":"Yash agrawal",
+    "education":"PhD (Electronics & Communication), NIT Hamirpur",
+    "phone":"079-68261629, 9882114669",
+    "address":"# 1101, FB-1, DA-IICT, Gandhinagar, Gujarat, India – 382007",
+    "email":"yash_agrawal@dau.ac.in,mr.yashagrawal@gmail.com",
+    "specialization":"VLSI, Nanotechnology, Numerical Method Techniques--FDTD, Design Techniques and Modelling Schemes of High-speed on-chip VLSI Interconnects, Modeling and Simulation Schemes, Advanced Devices and Their Modeling, Analysis"
+  },
+  {
+    "faculty_type":"regular",
+    "name":"Yash vasavada",
+    "education":"PhD (Electrical Engineering), Virginia Polytechnic Institute and State University, USA",
+    "phone":"079-68261634",
+    "address":"# 1224, FB-1, DA-IICT, Gandhinagar, Gujarat, India – 382007",
+    "email":"yash_vasavada@dau.ac.in",
+    "specialization":"Communication, Signal Processing, Machine Learning Meet Prof. Yash Vasavada: A Passionate Researcher in Wireless Communications and Signal Processing …"
+  }
+]

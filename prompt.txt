@@ -1,0 +1,121 @@
+
+FACULTYFINDER PROJECT – PROMPT LOG
+================================
+
+Student Prompt Log (LLM Usage)
+------------------------------
+
+This document contains the prompts that were given to the AI assistant during the development of the FacultyFinder project. The prompts are written in simple, natural language as they were actually asked during the implementation.
+
+--------------------------------------------------
+1. Understanding the Project Requirements
+--------------------------------------------------
+File Referenced:
+- FacultyFinder.pdf
+
+Prompt:
+"Sir gave us this FacultyFinder project PDF and honestly I am little confused. Can you please read this pdf and explain me step by step what exactly I have to build, like scraping, cleaning, database and API part. Please explain in simple words because I am not very strong in data engineering."
+
+Purpose:
+To understand the project objective, required components, tools to be used, and final deliverables.
+
+--------------------------------------------------
+2. Scraping Faculty Data from Website
+--------------------------------------------------
+File Generated:
+- faculty_raw.json
+
+Prompt:
+"I want to scrape faculty details from DA-IICT website. There are many faculty cards and different faculty types also. I am using Scrapy but I am confused which div to select and how to loop all faculty. Can you guide me like from very beginning and tell me exactly what CSS selectors to use?"
+
+Purpose:
+To scrape raw faculty information such as name, education, phone number, email, address, specialization, and faculty type.
+
+--------------------------------------------------
+3. Cleaning the Scraped Data
+--------------------------------------------------
+Files Involved:
+- cleaning.ipynb
+- faculty_raw.json
+- faculty_clean.json
+
+Prompt:
+"I have scraped faculty data but it is very messy. Some values are null, emails are written like [at] and [dot], and some fields are missing. I need clean structured data for database. Please help me clean this JSON using pandas and tell me what cleaning steps are important."
+
+Purpose:
+To clean and normalize the scraped data so it can be stored properly in a database.
+
+--------------------------------------------------
+4. Designing SQLite Schema and Storing Data
+--------------------------------------------------
+Files Involved:
+- json_to_sqlite.py
+- faculty.db
+
+Prompt:
+"Now I have cleaned faculty data in JSON format. My assignment says I must store it in SQLite database and design a schema. I have never designed database schema before. Please help me create table using sqlite3 and insert all JSON data properly."
+
+Purpose:
+To design a proper database schema and persist the cleaned faculty data using SQLite.
+
+--------------------------------------------------
+5. Verifying Data Persistence in SQLite
+--------------------------------------------------
+File Involved:
+- check_db.py
+
+Prompt:
+"I have created SQLite database but I am not sure if data is actually inserted or not. Can you give me a small Python script to check database and print few records so I can confirm?"
+
+Purpose:
+To verify that data has been successfully inserted into the SQLite database and persists after script execution.
+
+--------------------------------------------------
+6. Creating FastAPI Backend
+--------------------------------------------------
+File Involved:
+- main.py
+
+Prompt:
+"Now sir wants API part also. I have SQLite database ready. I need to create FastAPI app which will fetch data from database. Please guide me step by step how to connect SQLite with FastAPI and return faculty data as JSON."
+
+Purpose:
+To expose faculty data through REST APIs using FastAPI.
+
+--------------------------------------------------
+7. Filtering Faculty by Type in API
+--------------------------------------------------
+File Involved:
+- main.py
+
+Prompt:
+"I want API like /faculty/type/regular or /faculty/type/adjunct. Also if I type 'all' then it should return complete data. How to modify API endpoint for this condition?"
+
+Purpose:
+To enable parameter-based filtering of faculty records using faculty type.
+
+--------------------------------------------------
+8. Fetching Faculty by ID using API
+--------------------------------------------------
+File Involved:
+- main.py
+
+Prompt:
+"Sir also wants parameter execution using ID. Like /faculty/5 should return only one faculty. Please help me add this route and also handle case when ID is not found."
+
+Purpose:
+To fetch individual faculty records using primary key ID.
+
+--------------------------------------------------
+9. Viewing Database using DB Browser
+--------------------------------------------------
+Tool Used:
+- DB Browser for SQLite
+
+Prompt:
+"I have SQLite database file but I don’t know how to see full table properly. How to open SQLite database using DB Browser and view all rows so I can show it in viva?"
+
+Purpose:
+To visually inspect database tables and records for verification and presentation.
+
+

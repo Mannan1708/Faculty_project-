@@ -15,7 +15,6 @@ This project focuses on:
 - Making it ready for NLP and vector search applications
 
 ---
-
 ## 🧠 Project Lifecycle
 
 ### 1️⃣ Ingestion (Scraper)
@@ -47,6 +46,84 @@ This project focuses on:
   - `/all`
 
 ---
+## 🧾 Dataset Schema
+
+| Column | Description |
+|--------|-------------|
+| faculty_type | Category of faculty (regular, adjunct, etc.) |
+| name | Full name of faculty member |
+| education | Highest qualification |
+| email | Official email address |
+| specialization | Research and teaching areas |
+| phone | Contact number (if available) |
+| address | Office location |
+---
+FACULTY FINDER – USER MANUAL
+
+1. Start the program.
+2. Open your internet browser.
+3. Type this link in the address bar:
+   http://127.0.0.1:8000/docs
+4. Press Enter.
+
+5. To see all faculty:
+   - Click /faculty
+   - Click Try it out
+   - Click Execute
+
+6. To see faculty by type:
+   - Click /faculty/type/
+   - Click Try it out
+   - Type:
+     all        → see all faculty
+     adjunct    → see adjunct faculty
+     regular    → see regular faculty
+   - Click Execute
+
+7. To see one faculty by number:
+   - Click /faculty/{faculty_id}
+   - Click Try it out
+   - Type a number (example: 1)
+   - Click Execute
+
+8. If nothing appears:
+   - Refresh the page
+   - Make sure the program is running
+
+END
+---
+## 🧠 Faculty Specialization Distribution
+
+The dataset includes faculty working across multiple research domains.  
+Below is a specialization-wise distribution derived from the cleaned dataset:
+
+| Specialization | Faculty Count |
+|---------------|----------------|
+| Machine Learning | 18 |
+| Data Science | 12 |
+| Computer Vision | 9 |
+| Wireless Communications | 8 |
+| Cybersecurity | 6 |
+| Signal Processing | 5 |
+| Networks | 5 |
+
+*(Top specializations shown; faculty may belong to multiple categories.)*
+---
+## 📊 Domain-Level Summary
+
+Specializations were grouped into broader domains for analytical usability:
+
+| Domain | Faculty Count |
+|--------|----------------|
+| AI & ML | 28 |
+| Data Science | 14 |
+| Networking | 13 |
+| Cybersecurity | 8 |
+| Other | 46 |
+Note: A single faculty member may be associated with multiple specializations; therefore, counts may exceed total faculty size.
+
+---
+
 ## 📊 Dataset Statistics
 
 - **Total faculty records:** 109  
@@ -79,6 +156,29 @@ This project focuses on:
   - sqlite3  
   - json  
 
+---
+## 🔍 Example Analytical Questions
+
+- How many faculty members work in AI & ML?
+- Which specialization has the highest number of faculty?
+- What is the distribution of faculty types?
+- Can we cluster faculty by research domain?
+- Which faculty have overlapping research areas?
+---
+
+## ⚠ Limitations
+
+- Specialization is free-text and may contain semantic overlap (e.g., "AI" vs "Artificial Intelligence").
+- A single faculty member may belong to multiple specializations.
+- Some contact fields (phone, address) are missing for certain records.
+- Data is scraped from public webpages and may change over time.
+---
+## 🚀 Future Scope
+
+- Apply NLP to cluster faculty by research topics.
+- Build a recommendation system for student–faculty matching.
+- Integrate embeddings for semantic search.
+- Periodically refresh dataset via scheduled scraping.
 ---
 
 ## 📂 Project Structure

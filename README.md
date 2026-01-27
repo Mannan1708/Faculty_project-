@@ -47,7 +47,28 @@ This project focuses on:
   - `/all`
 
 ---
+## 📊 Dataset Statistics
 
+- **Total faculty records:** 109  
+- **Faculty categories:**
+  - Regular: 67  
+  - Adjunct: 26  
+  - International Adjunct: 11  
+  - Distinguished: 3  
+  - Professor of Practice: 2  
+
+- **Number of attributes per record:** 8  
+  (`faculty_type, name, education, phone, address, email, specialization`)
+
+- **Missing values (selected fields):**
+  - Phone: 45 missing  
+  - Address: 38 missing  
+  - Email: 0 missing  
+
+- **Data format:** JSON  
+- **Database:** SQLite  
+- **API:** FastAPI
+---
 ## 🛠️ Technologies Used
 - **Python 3.x**
 - **Jupyter Notebook**

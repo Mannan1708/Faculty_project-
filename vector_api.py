@@ -1,163 +1,185 @@
-from fastapi import FastAPI, Query
+from fastapi import FastAPI
 from fastapi.responses import HTMLResponse
+from fastapi.middleware.cors import CORSMiddleware
 import faiss
 import json
+import numpy as np
 from sentence_transformers import SentenceTransformer
 
 app = FastAPI(title="Faculty Semantic Search")
 
-# Load model
+# Add CORS middleware
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
+
+# Load model and data
+print("Loading model...")
 model = SentenceTransformer("all-MiniLM-L6-v2")
-
-# Load FAISS index
+print("Loading FAISS index...")
 index = faiss.read_index("faculty.index")
-
-# Load metadata
+print("Loading metadata...")
 with open("faculty_meta.json", "r", encoding="utf-8") as f:
     metadata = json.load(f)
+print(f"Ready! {len(metadata)} faculty members loaded.")
 
-# ---------------- HOME PAGE ----------------
 @app.get("/", response_class=HTMLResponse)
 def home():
     return """
-    <html>
+    <!DOCTYPE html>
+    <html lang="en">
     <head>
-        <title>Faculty Semantic Search</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Faculty Finder - AI Search</title>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
         <style>
+            * { margin: 0; padding: 0; box-sizing: border-box; }
             body {
-                font-family: Arial, sans-serif;
-                background: linear-gradient(to right, #f5f7fa, #c3cfe2);
-                margin: 0;
-                padding: 0;
+                font-family: 'Inter', sans-serif;
+                background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+                min-height: 100vh;
+                color: #fff;
+                padding: 40px 20px;
             }
-            .container {
-                width: 80%;
-                margin: auto;
-                margin-top: 50px;
-                background: white;
-                padding: 30px;
-                border-radius: 12px;
-                box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+            .container { max-width: 1200px; margin: 0 auto; }
+            .header { text-align: center; margin-bottom: 60px; animation: fadeIn 0.8s; }
+            .logo { font-size: 3.5rem; font-weight: 800; margin-bottom: 10px; }
+            .tagline { font-size: 1.2rem; opacity: 0.9; }
+            .search-section {
+                background: rgba(255, 255, 255, 0.1);
+                backdrop-filter: blur(20px);
+                border-radius: 24px;
+                padding: 50px;
+                margin-bottom: 40px;
+                box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+                border: 1px solid rgba(255, 255, 255, 0.2);
             }
-            h1 {
-                text-align: center;
-                color: #333;
-            }
-            .search-box {
-                display: flex;
-                justify-content: center;
-                margin-bottom: 20px;
-            }
+            .search-box { display: flex; gap: 15px; margin-bottom: 20px; }
             input {
-                width: 70%;
-                padding: 10px;
-                font-size: 16px;
-                border-radius: 8px;
-                border: 1px solid #ccc;
+                flex: 1;
+                padding: 18px 20px;
+                font-size: 1.05rem;
+                border-radius: 16px;
+                border: 2px solid rgba(255, 255, 255, 0.3);
+                background: rgba(255, 255, 255, 0.15);
+                color: #fff;
+                font-family: 'Inter', sans-serif;
             }
+            input::placeholder { color: rgba(255, 255, 255, 0.6); }
             button {
-                padding: 10px 20px;
-                margin-left: 10px;
+                padding: 18px 40px;
                 border: none;
-                border-radius: 8px;
-                background-color: #4CAF50;
+                border-radius: 16px;
+                background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
                 color: white;
-                font-size: 16px;
+                font-size: 1.05rem;
+                font-weight: 600;
                 cursor: pointer;
+                transition: all 0.3s;
             }
-            button:hover {
-                background-color: #45a049;
+            button:hover { transform: translateY(-2px); }
+            .result-card {
+                background: rgba(255, 255, 255, 0.1);
+                backdrop-filter: blur(20px);
+                border-radius: 20px;
+                padding: 30px;
+                margin-bottom: 20px;
+                border: 1px solid rgba(255, 255, 255, 0.2);
+                transition: all 0.3s;
             }
-            table {
-                width: 100%;
-                border-collapse: collapse;
-                margin-top: 20px;
+            .result-card:hover { transform: translateY(-5px); background: rgba(255, 255, 255, 0.15); }
+            .result-name { font-size: 1.5rem; font-weight: 700; margin-bottom: 10px; }
+            .meta-badge {
+                display: inline-block;
+                padding: 6px 14px;
+                background: rgba(255, 255, 255, 0.2);
+                border-radius: 12px;
+                font-size: 0.85rem;
+                margin-right: 10px;
             }
-            th, td {
-                border: 1px solid #ddd;
-                padding: 10px;
-                text-align: left;
-            }
-            th {
-                background-color: #4CAF50;
-                color: white;
-            }
-            tr:nth-child(even) {
-                background-color: #f9f9f9;
-            }
-            .footer {
-                text-align: center;
-                margin-top: 15px;
-                color: #666;
-                font-size: 14px;
-            }
+            @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
         </style>
     </head>
     <body>
         <div class="container">
-            <h1>🔍 Faculty Semantic Search</h1>
-
-            <div class="search-box">
-                <input type="text" id="query" placeholder="e.g. machine learning and computer vision">
-                <button onclick="search()">Search</button>
+            <div class="header">
+                <div class="logo">🎓 Faculty Finder</div>
+                <div class="tagline">AI-Powered Semantic Search</div>
             </div>
-
+            <div class="search-section">
+                <div class="search-box">
+                    <input type="text" id="query" placeholder="Search by research interests, expertise, or topic...">
+                    <button onclick="search()">Search</button>
+                </div>
+            </div>
             <div id="results"></div>
-
-            <div class="footer">
-                Semantic search over faculty profiles using embeddings
-            </div>
         </div>
-
         <script>
             async function search() {
-                const query = document.getElementById("query").value;
+                const query = document.getElementById('query').value.trim();
                 if (!query) return;
-
-                const response = await fetch(`/api/search?query=${encodeURIComponent(query)}`);
-                const data = await response.json();
-
-                let html = "<table><tr><th>Rank</th><th>Name</th><th>Faculty Type</th><th>Specialization</th><th>Similarity</th></tr>";
-
-                data.results.forEach(r => {
-                    html += `<tr>
-                        <td>${r.rank}</td>
-                        <td>${r.name}</td>
-                        <td>${r.faculty_type}</td>
-                        <td>${r.specialization}</td>
-                        <td>${r.similarity}</td>
-                    </tr>`;
-                });
-
-                html += "</table>";
-                document.getElementById("results").innerHTML = html;
+                
+                document.getElementById('results').innerHTML = '<div style="text-align:center;padding:40px;">Searching...</div>';
+                
+                try {
+                    const response = await fetch(`/api/search?query=${encodeURIComponent(query)}&top_k=10`);
+                    const data = await response.json();
+                    
+                    let html = '';
+                    data.results.forEach(r => {
+                        html += `
+                            <div class="result-card">
+                                <div class="result-name">${r.rank}. ${r.name}</div>
+                                <div style="margin-bottom:15px;">
+                                    <span class="meta-badge">📚 ${r.faculty_type}</span>
+                                    <span class="meta-badge">✨ ${(r.similarity * 100).toFixed(1)}% Match</span>
+                                </div>
+                                <div><strong>Specialization:</strong> ${r.specialization}</div>
+                            </div>
+                        `;
+                    });
+                    document.getElementById('results').innerHTML = html;
+                } catch (error) {
+                    document.getElementById('results').innerHTML = '<div style="text-align:center;padding:40px;">Error: ' + error.message + '</div>';
+                }
             }
+            document.getElementById('query').addEventListener('keypress', (e) => {
+                if (e.key === 'Enter') search();
+            });
         </script>
     </body>
     </html>
     """
 
-# ---------------- API SEARCH ----------------
 @app.get("/api/search")
-def api_search(query: str = Query(...), top_k: int = 5):
-    query_vec = model.encode([query]).astype("float32")
+def search(query: str, top_k: int = 5):
+    # Encode query
+    query_embedding = model.encode([query])
+    query_vec = np.array(query_embedding, dtype=np.float32)
+    
+    # Search
     distances, indices = index.search(query_vec, top_k)
-
+    
+    # Build results
     results = []
     for rank, (idx, dist) in enumerate(zip(indices[0], distances[0]), start=1):
-        faculty = metadata[idx]
-        similarity = 1 / (1 + dist)
-
-        spec = faculty["specialization"]
+        fac = metadata[int(idx)]
+        similarity = 1 / (1 + float(dist))
+        spec = fac["specialization"]
         if len(spec) > 120:
             spec = spec[:120] + "..."
-
+        
         results.append({
             "rank": rank,
-            "name": faculty["name"],
-            "faculty_type": faculty["faculty_type"],
+            "name": fac["name"],
+            "faculty_type": fac["faculty_type"],
             "specialization": spec,
-            "similarity": round(similarity, 3)
+            "similarity": float(similarity)
         })
-
+    
     return {"query": query, "results": results}

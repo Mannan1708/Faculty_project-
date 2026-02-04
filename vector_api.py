@@ -128,7 +128,21 @@ def home():
                 
                 try {
                     const response = await fetch(`/api/search?query=${encodeURIComponent(query)}&top_k=10`);
+                    
+                    if (!response.ok) {
+                        throw new Error(`HTTP ${response.status}: ${response.statusText}`);
+                    }
+                    
                     const data = await response.json();
+                    
+                    if (data.error) {
+                        throw new Error(data.error);
+                    }
+                    
+                    if (!data.results || data.results.length === 0) {
+                        document.getElementById('results').innerHTML = '<div style="text-align:center;padding:40px;">No results found. Try different keywords.</div>';
+                        return;
+                    }
                     
                     let html = '';
                     data.results.forEach(r => {
@@ -145,7 +159,14 @@ def home():
                     });
                     document.getElementById('results').innerHTML = html;
                 } catch (error) {
-                    document.getElementById('results').innerHTML = '<div style="text-align:center;padding:40px;">Error: ' + error.message + '</div>';
+                    console.error('Search error:', error);
+                    document.getElementById('results').innerHTML = `
+                        <div style="text-align:center;padding:40px;background:rgba(255,0,0,0.1);border-radius:16px;">
+                            <h3 style="color:#ff6b6b;margin-bottom:10px;">⚠️ Error Processing Request</h3>
+                            <p><strong>Details:</strong> ${error.message}</p>
+                            <p style="margin-top:10px;font-size:0.9rem;opacity:0.8;">Check browser console (F12) for more details</p>
+                        </div>
+                    `;
                 }
             }
             document.getElementById('query').addEventListener('keypress', (e) => {

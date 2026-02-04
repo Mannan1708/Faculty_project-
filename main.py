@@ -22,7 +22,7 @@ def get_all_faculty():
     cursor.execute("SELECT * FROM faculty")
     rows = cursor.fetchall()
     conn.close()
-    return[dict(row) for row in rows]
+    return [dict(row) for row in rows]
 
 @app.get("/faculty/type/{faculty_type}")
 def get_faculty_by_type(faculty_type: str):
@@ -42,9 +42,7 @@ def get_faculty_by_type(faculty_type: str):
 
     return [dict(row) for row in rows]
 
-   
-   
-    conn.close()
+
 @app.get("/faculty/{faculty_id}")
 def get_faculty_by_id(faculty_id: int):
     conn = get_db_connection()

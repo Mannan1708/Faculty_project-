@@ -1,0 +1,547 @@
+[
+  {
+    "name":"Abhijit mukherjee",
+    "faculty_type":"adjunct",
+    "specialization":"Enterprise Computing and SAP Systems (IS-U, S\/4 HANA), Data Privacy and Compliance (DPDP Act 2023), IT Strategy, Governance, and Data Analytics"
+  },
+  {
+    "name":"Aditi nath sarkar",
+    "faculty_type":"adjunct",
+    "specialization":"Literature, Religious, Cultural History; South Asian Civilization Studies"
+  },
+  {
+    "name":"Ajeet kumar singh",
+    "faculty_type":"adjunct",
+    "specialization":"Computer Vision, Natural Language Processing, Adversarial Machine Learning"
+  },
+  {
+    "name":"Amishal modi",
+    "faculty_type":"adjunct",
+    "specialization":"Indian Literature, The English Novel, Sexuality Studies, 19th Century Literature"
+  },
+  {
+    "name":"Anjan ghosh",
+    "faculty_type":"adjunct",
+    "specialization":"Optical Communication - Fiber Optic and Free Space, Photonic Devices and Subsystems, Sensors, Image and Signal Processing, Nonlinear Systems and Chaos, System Dynamics Modelling of Education"
+  },
+  {
+    "name":"Binay bhushan chakrabarti",
+    "faculty_type":"adjunct",
+    "specialization":"Finance"
+  },
+  {
+    "name":"Deepak ghodgaonkar",
+    "faculty_type":"adjunct",
+    "specialization":"RF and Microwave Engineering, Microwave Nondestructive Testing of Composite Materials, Biomedical Applications of Microwaves, Electromagnetic Imaging of Complex Dielectric Bodies, Microwave Measurements and Characterization of Nonlinear Dielectric\u2026"
+  },
+  {
+    "name":"Dhaval joshi",
+    "faculty_type":"adjunct",
+    "specialization":"Design Research, Artificial Intelligence, Gaming, Customer engagement"
+  },
+  {
+    "name":"Dipankar nagchoudhuri",
+    "faculty_type":"adjunct",
+    "specialization":"VLSI Design, CMOS Circuits and Technology, Biomedical Signal Processing Chip Design"
+  },
+  {
+    "name":"Gangeya mukherji",
+    "faculty_type":"adjunct",
+    "specialization":"Intellectual history, 19th century India, Post-colonialism, Vivekananda, Tagore, Gandhi, Mahabharata."
+  },
+  {
+    "name":"Jayprakash lalchandani",
+    "faculty_type":"adjunct",
+    "specialization":"Software Engineering"
+  },
+  {
+    "name":"K narayana chandran",
+    "faculty_type":"adjunct",
+    "specialization":"Major Areas of Specialization: English Poetry and Theory; English Pedagogy and Politics of the discipline; Indian and western narrative traditions Minor Specialization: Translation; Allusion, intertextuality and interge\u2026"
+  },
+  {
+    "name":"Kalgi gandhi",
+    "faculty_type":"adjunct",
+    "specialization":"Database Management, Distributed Database Management, Edge Computing"
+  },
+  {
+    "name":"Kripabandhu ghosh",
+    "faculty_type":"adjunct",
+    "specialization":"Information Retrieval\/Data Mining\/AI on Legal Domain"
+  },
+  {
+    "name":"Kuntala dasgupta",
+    "faculty_type":"adjunct",
+    "specialization":"Rabindra Sangeet, North Indian, Classical, India Film Music and History"
+  },
+  {
+    "name":"Nandini banerjee",
+    "faculty_type":"adjunct",
+    "specialization":"Economics, Psychology, Soft skills. Certifications in Basic counseling course \u2013 Counseling development program (CDP), Advanced counseling course (ADP), Theoretical and experiential training on Fundamentals of Cognitive Behavior Therapy (CBT)\u2026"
+  },
+  {
+    "name":"Nikita desai",
+    "faculty_type":"adjunct",
+    "specialization":"Interaction Design Immersive Experience Design"
+  },
+  {
+    "name":"Parth mehta",
+    "faculty_type":"adjunct",
+    "specialization":"Natural Language Processing, Large Language Models, Information Retrieval, Deep Learning"
+  },
+  {
+    "name":"Prashant grover",
+    "faculty_type":"adjunct",
+    "specialization":"Animation"
+  },
+  {
+    "name":"Prosenjit ganguly",
+    "faculty_type":"adjunct",
+    "specialization":"Animation Film Making, Screenwriting, Story-telling, Character Design, Photography, Illustration, Voice Acting"
+  },
+  {
+    "name":"Rudranil das",
+    "faculty_type":"adjunct",
+    "specialization":"Photography, Traveling, Research & Documentation on various crafts"
+  },
+  {
+    "name":"Samit bhattacharya",
+    "faculty_type":"adjunct",
+    "specialization":"Extended reality (virtual, augmented & mixed reality) Affective & ubiquitous systems Mobile & wearable systems & interactions ICT applications in education, agriculture, & h\u2026"
+  },
+  {
+    "name":"Subhas chandra nandy",
+    "faculty_type":"adjunct",
+    "specialization":"Algorithms, Data Structure, Graph Applications, Computational and Combinatorial Geometry"
+  },
+  {
+    "name":"Swati priya",
+    "faculty_type":"adjunct",
+    "specialization":"Remote sensing and GIS, Precision agriculture, and Crop modelling precision agriculture"
+  },
+  {
+    "name":"Troy vasanth",
+    "faculty_type":"adjunct",
+    "specialization":"Sound Design, 3D, Animation and Motion Design"
+  },
+  {
+    "name":"Umang shah",
+    "faculty_type":"adjunct",
+    "specialization":"a. Integrated Interdisciplinary Design b. Design and Technology c. Aesthetic Detailings and Manufacturing d. Radical and Incremental Innovation."
+  },
+  {
+    "name":"Vishvajit pandya",
+    "faculty_type":"distinguished",
+    "specialization":"Material Culture, Design and Communication Culture, Visual Anthropology, Anthropology of Space, Rituals and History with specific reference to Colonialism South East Asia"
+  },
+  {
+    "name":"Anil maheshwari",
+    "faculty_type":"international_adjunct",
+    "specialization":"Design, Analysis and Implementation of Algorithms for Problems arising in Computational Geometry, Graph Theory, Discrete Mathematics, and Data Science."
+  },
+  {
+    "name":"Anthony r. noerpel",
+    "faculty_type":"international_adjunct",
+    "specialization":"Cellular and Satellite Communication System Design, RF Propagation, Earth Systems Sciences."
+  },
+  {
+    "name":"Gabriella pasi",
+    "faculty_type":"international_adjunct",
+    "specialization":"Information Retrieval, Information Filtering, Data Science, Fuzzy Logic"
+  },
+  {
+    "name":"Gaurav sharma",
+    "faculty_type":"international_adjunct",
+    "specialization":"Data Analytics, Cyber Physical Systems, Signal and Image Processing, Computer Vision, Media Security, Communications"
+  },
+  {
+    "name":"Nicholas belkin",
+    "faculty_type":"international_adjunct",
+    "specialization":"Information Retrieval, and Interaction Design"
+  },
+  {
+    "name":"Nilotpal chakravarti",
+    "faculty_type":"international_adjunct",
+    "specialization":"None"
+  },
+  {
+    "name":"Ranjan pal",
+    "faculty_type":"international_adjunct",
+    "specialization":"Cyber Risk Management, Cyber Resilience, Cybersecurity, Decision Science, Algorithmics, Applied Probability"
+  },
+  {
+    "name":"Rita chakravarti",
+    "faculty_type":"international_adjunct",
+    "specialization":"None"
+  },
+  {
+    "name":"S. lakshmivarahan",
+    "faculty_type":"international_adjunct",
+    "specialization":"Big Data Analytics, Dynamic Data Assimilation and Its Applications, Multi-Agent Dynamics and Network Science, Interconnection Networks for Parallel Computers, Learning Algorithms and Computational Finance."
+  },
+  {
+    "name":"Stefano mizzaro",
+    "faculty_type":"international_adjunct",
+    "specialization":"Information Retrieval, Artificial Intelligence"
+  },
+  {
+    "name":"Thomas mandl",
+    "faculty_type":"international_adjunct",
+    "specialization":"Information Science, Cognitive Similarity Learning in Information Retrieval and Information Management"
+  },
+  {
+    "name":"Ajay tomar",
+    "faculty_type":"professor_of_practice",
+    "specialization":"Mr. Ajay Tomar was retired as the Commissioner of Police, Surat. He was recipient of Police Medal For Meritorious Service 2005 and also the President's Medal For Distinguished Service-2014. KNOW MORE"
+  },
+  {
+    "name":"Anirban dutta gupta",
+    "faculty_type":"professor_of_practice",
+    "specialization":"Natural History & Ethnographic Documentary, Photography, Communication Design, Design for Development & Conservation"
+  },
+  {
+    "name":"Harpreet singh jattana",
+    "faculty_type":"professor_of_practice",
+    "specialization":"CMOS Process Development, Device Reliability, CMOS Design, Compound Semiconductors, VLSI Testing & Packaging, Wafer Fabrication"
+  },
+  {
+    "name":"K c supekar",
+    "faculty_type":"professor_of_practice",
+    "specialization":"Dr. Supekar has an extensive experience of about 40 years of cooperative dairy sector in India which ranges from small and marginal farmers at grassroots level to serving as Managing Director of NCDFI for about 13 years. The key areas of interest include upliftment of the rural farmers & women empowerment to bring social and cultural change and bringing in the digital technologies to revamp the Indian rural ecosystem."
+  },
+  {
+    "name":"Abhishek gupta",
+    "faculty_type":"regular",
+    "specialization":"Machine Learning, Statistical Signal Processing, RF Communications, Computer Vision, Autonomous Vehicles"
+  },
+  {
+    "name":"Abhishek jindal",
+    "faculty_type":"regular",
+    "specialization":"Reinforcement Learning, Deep Learning for Finance and Cyber Security, Wireless Communication, Cyber-Physical Systems, Information Security"
+  },
+  {
+    "name":"Abhishek tilva",
+    "faculty_type":"regular",
+    "specialization":"Arbitrage Theory, Stochastic Portfolio Theory, Stochastic Analysis"
+  },
+  {
+    "name":"Aditya tatu",
+    "faculty_type":"regular",
+    "specialization":"Computer Vision, Image Processing, Pattern Recognition, Signal Processing"
+  },
+  {
+    "name":"Ajay beniwal",
+    "faculty_type":"regular",
+    "specialization":"Flexible and Printable Electronics for Healthcare and Digital Agricultural Applications, Smart Sensing Technologies with Wireless Connectivity, Sensor Materials and Nanocomposites, Sustainable and Green Electronics."
+  },
+  {
+    "name":"Amit mankodi",
+    "faculty_type":"regular",
+    "specialization":"Embedded Systems, Computer Networks, High Performance Computing, Machine Learning"
+  },
+  {
+    "name":"Anil roy (on leave)",
+    "faculty_type":"regular",
+    "specialization":"Applications of Image Processing, Fiber Optics and Optical Communication, High speed Semiconductor Devices, Nanoscience and Nanotechnology, Quantum Optics, Technologies for Humanitarian Challenges."
+  },
+  {
+    "name":"Anish mathuria",
+    "faculty_type":"regular",
+    "specialization":"Network Security, Privacy-Preserving Computation, System and Software Security"
+  },
+  {
+    "name":"Ankit vijayvargiya",
+    "faculty_type":"regular",
+    "specialization":"Biomedical Signals, Machine Learning, Neural Rehabilitation, Gait Analysis"
+  },
+  {
+    "name":"Ankush chander",
+    "faculty_type":"regular",
+    "specialization":"Natural Language Processing, Information Retrieval, Operating systems"
+  },
+  {
+    "name":"Anupam rana",
+    "faculty_type":"regular",
+    "specialization":"Design Education, Experience Design, Multidisciplinary Research, UIUX, Design Thinking."
+  },
+  {
+    "name":"Arnab kumar ray",
+    "faculty_type":"regular",
+    "specialization":"Astrophysical Accretion, Fluid Dynamics, Nonlinear Systems"
+  },
+  {
+    "name":"Arpit rana",
+    "faculty_type":"regular",
+    "specialization":"Applied Machine Learning, Recommendation Systems, Multimodality, and their applications in Digital Innovation and Transformation"
+  },
+  {
+    "name":"Arpita mal",
+    "faculty_type":"regular",
+    "specialization":"None"
+  },
+  {
+    "name":"Bharani kollipara",
+    "faculty_type":"regular",
+    "specialization":"Modern Philosophy, Phenomenology and Hermeneutics, Literary Modernism"
+  },
+  {
+    "name":"Bhaskar chaudhury",
+    "faculty_type":"regular",
+    "specialization":"Computational Plasma Physics, Computational Data Science, High Performance Scientific Meet Prof. Bhaskar Chaudhury! Computing, Parallel Prog\u2026"
+  },
+  {
+    "name":"Biswajit mishra",
+    "faculty_type":"regular",
+    "specialization":"Ultra Low Power and Sub-threshold Circuit Methodologies, Very Low Voltage Circuits for Wireless Sensor Networks, Digital IC Design, Power Management for Energy Harvesters, Signal Processing Hardware for Color Image Processing, Geometric Algebra an\u2026"
+  },
+  {
+    "name":"Gautam dutta",
+    "faculty_type":"regular",
+    "specialization":"Theoretical physics"
+  },
+  {
+    "name":"Gopinath panda",
+    "faculty_type":"regular",
+    "specialization":"Probability and Statistics"
+  },
+  {
+    "name":"Hemant patil",
+    "faculty_type":"regular",
+    "specialization":"Speech Signal Processing, Speech and Speaker Recognition (Voice Biometrics), Development of Countermeasures for Spoofing Attacks on Automatic Speaker Verification, Voice Conversion"
+  },
+  {
+    "name":"Jenson joseph",
+    "faculty_type":"regular",
+    "specialization":"History and theory of Media, Film Studies, Cultural Studies, Malayalam Cinema, Popular Culture"
+  },
+  {
+    "name":"Madhu kant sharma",
+    "faculty_type":"regular",
+    "specialization":"Fractional Differential Equations (FDEs), Optimization, Numerical Methods for FDEs, Signal Processing"
+  },
+  {
+    "name":"Madhumita mazumdar",
+    "faculty_type":"regular",
+    "specialization":"Social and Cultural History Science, Technology and Design, History of Modernity and Developmental Practice in Colonial and Post-Colonial India, Economic and Social History of Gujarat"
+  },
+  {
+    "name":"Maniklal das",
+    "faculty_type":"regular",
+    "specialization":"Cyber Security, Privacy, Cryptography, Algorithms"
+  },
+  {
+    "name":"Manish chaturvedi",
+    "faculty_type":"regular",
+    "specialization":"Design of Intelligent Transportation Systems, Communication Protocol Design, Embedded Systems and Internet of Things"
+  },
+  {
+    "name":"Manish kumar",
+    "faculty_type":"regular",
+    "specialization":"Algorithm Development and\u00a0Performance Optimization in\u00a0UAV Networks, Sensor & Ad-Hoc Networks; Applications of AI\/ML, Blockchain in Networks; Internet of Things; Next Generation Wireless Networks:\u00a05G\/6G"
+  },
+  {
+    "name":"Manjunath v. joshi",
+    "faculty_type":"regular",
+    "specialization":"Signal and Image Processing, Digital Communication, Computer Vision, Machine Learning"
+  },
+  {
+    "name":"Manoj raut",
+    "faculty_type":"regular",
+    "specialization":"Mathematical Logic"
+  },
+  {
+    "name":"Minal bhise",
+    "faculty_type":"regular",
+    "specialization":"Distributed Databases - Query Processing, Application Development for Biodiversity Domain, Software System Analysis and Design"
+  },
+  {
+    "name":"Mukesh tiwari",
+    "faculty_type":"regular",
+    "specialization":"Nonequilibrium statistical mechanics and Nonlinear dynamics"
+  },
+  {
+    "name":"Nabin kumar sahu",
+    "faculty_type":"regular",
+    "specialization":"Frame Theory, Optimization Theory and Applications, Variational Inequalities"
+  },
+  {
+    "name":"P m jat",
+    "faculty_type":"regular",
+    "specialization":"Databases"
+  },
+  {
+    "name":"P s kalyan sasidhar",
+    "faculty_type":"regular",
+    "specialization":"Meet Dr. Kalyan Sasidhar : Pioneering Mobile Computing and Network Sensing Mobile and Pervasive Computing which include Wireless Sensor Networks, Mo\u2026"
+  },
+  {
+    "name":"Pankaj kumar",
+    "faculty_type":"regular",
+    "specialization":"Bio-Inspired Metasurface\/Metamaterial Devices, Terahertz Devices, Semiconductor Device Modeling and Simulation, Emerging Devices, JLT, OFET, TFET, FIN-FET, VLSI Design."
+  },
+  {
+    "name":"Parul gupta",
+    "faculty_type":"regular",
+    "specialization":"Economic Development, Education Policy, Economics of Gender"
+  },
+  {
+    "name":"Prasenjit majumder (on leave)",
+    "faculty_type":"regular",
+    "specialization":"Natural Language Processing, Information Retrieval, Cognitive Science"
+  },
+  {
+    "name":"Pratim roy",
+    "faculty_type":"regular",
+    "specialization":"Theoretical Physics, ADS\/CFT Duality, Quantum Field Theory"
+  },
+  {
+    "name":"Pritam anand",
+    "faculty_type":"regular",
+    "specialization":"Support Vector Machines, Loss Functions, Regression, Extreme Learning Machine, Quantile Regression"
+  },
+  {
+    "name":"Prosenjit kundu",
+    "faculty_type":"regular",
+    "specialization":"Physics and Mathematical Sciences, Applied Mathematics, Complex Networks, Dynamical Systems"
+  },
+  {
+    "name":"Puneet bhateja",
+    "faculty_type":"regular",
+    "specialization":"Theoretical Computer Science"
+  },
+  {
+    "name":"Purbasha das",
+    "faculty_type":"regular",
+    "specialization":"History of Transport and Communication, Urban History, Legal and Social History"
+  },
+  {
+    "name":"Pushpendra kumar",
+    "faculty_type":"regular",
+    "specialization":"Fractional Calculus, Mathematical Modeling, Numerical Analysis, and Neural Networks"
+  },
+  {
+    "name":"Rachit chhaya",
+    "faculty_type":"regular",
+    "specialization":"Coresets for Machine Learning"
+  },
+  {
+    "name":"Rahul muthu",
+    "faculty_type":"regular",
+    "specialization":"Graph Theory, Data Structures, Algorithms, Automata Theory"
+  },
+  {
+    "name":"Rajib lochan das",
+    "faculty_type":"regular",
+    "specialization":"Adaptive Signal Processing, Compressive Sensing, Machine Learning, Image Processing, Graph Signal Processing"
+  },
+  {
+    "name":"Ratna bharati bhamidipati",
+    "faculty_type":"regular",
+    "specialization":"Diaspora , Transnationalism, Migrant Subjectivity"
+  },
+  {
+    "name":"Rutu parekh",
+    "faculty_type":"regular",
+    "specialization":"High-Voltage ASIC Design for Space Applications, Nanoelectronics and Emerging Devices, Embedded Systems and IoT Applications, Long-Distance Wireless Communication Systems, Smart Agriculture and Environmental Monitoring, Memristor-based Neuromorphi\u2026"
+  },
+  {
+    "name":"Sandip modha",
+    "faculty_type":"regular",
+    "specialization":"Natural Language Processing (NLP), Information Retrieval (IR), Evaluation Methodologies, and Computational Approaches to Social Media Data."
+  },
+  {
+    "name":"Sanjay srivastava",
+    "faculty_type":"regular",
+    "specialization":"Internet of Things, Protocol Modelling and Analysis, Simulation"
+  },
+  {
+    "name":"Satvik gupta",
+    "faculty_type":"regular",
+    "specialization":"Weird Fiction, Horror Fiction, Speculative Fiction, World Literature, Existentialism, Absurdism"
+  },
+  {
+    "name":"Saurabh tiwari",
+    "faculty_type":"regular",
+    "specialization":"Meet Prof. Saurabh Tiwari: The realm of Software Engineering and Innovation! Software Engineering (SE), Mining Software Repositories, Natural\u00a0Langua\u2026"
+  },
+  {
+    "name":"Sayantan paul",
+    "faculty_type":"regular",
+    "specialization":"High-dimensional Inference, Multiple Testing, Posterior Concentration, Variable Selection, Sparse Signal Recovery"
+  },
+  {
+    "name":"Shefali jha",
+    "faculty_type":"regular",
+    "specialization":"Political Anthropology, Cultural Studies, Feminist Theory, Film Studies, Literary and Visual Cultures in South Asia"
+  },
+  {
+    "name":"Shruti bhilare",
+    "faculty_type":"regular",
+    "specialization":"Biometrics, Pattern Recognition, Image Processing"
+  },
+  {
+    "name":"Sourish dasgupta",
+    "faculty_type":"regular",
+    "specialization":"Natural Language Processing, Knowledge Graphs, Analysis of Large Language Models"
+  },
+  {
+    "name":"Sreeja rajendran",
+    "faculty_type":"regular",
+    "specialization":"VLSI, Embedded Systems and MEMS, Hardware Security, VLSI Test"
+  },
+  {
+    "name":"Srimanta mandal",
+    "faculty_type":"regular",
+    "specialization":"Image Processing, Computer Vision, Machine Learning"
+  },
+  {
+    "name":"Subhasish basak",
+    "faculty_type":"regular",
+    "specialization":"Image Processing, Statistical Learning, Nonparametric Methods, Decision trees, Bayesian techniques, Quality monitoring"
+  },
+  {
+    "name":"Sudip bera",
+    "faculty_type":"regular",
+    "specialization":"Algebraic graph theory, Algebraic combinatorics"
+  },
+  {
+    "name":"Sujay kadam",
+    "faculty_type":"regular",
+    "specialization":"Instrumentation, Systems and Control Theory, Human-Motor Learning, Robotics"
+  },
+  {
+    "name":"Sunitha v",
+    "faculty_type":"regular",
+    "specialization":"Theory, Algorithms (Parallel, Distributed, Dynamic), Applications of Graphs"
+  },
+  {
+    "name":"Supantha pandit",
+    "faculty_type":"regular",
+    "specialization":"Theoretical Computer Science Mainly focused on: Computational Geometry Approximation Algorithms Distributed Network and Agent Algorithms Graph Algorithms"
+  },
+  {
+    "name":"Tapas kumar maiti",
+    "faculty_type":"regular",
+    "specialization":"Meet Dr. Tapas Kumar Maiti: Pioneering Research in Robotics and Cybernetics Intelligent Devices\u00a0and\u00a0 Systems Robotics AI-Chip Cyber\u2026"
+  },
+  {
+    "name":"Tathagata bandyopadhyay",
+    "faculty_type":"regular",
+    "specialization":"Statistical Inference, Survey Sampling, Discrete Data Modeling and Analysis, Applications of Statistical Methodologies in Various Fields"
+  },
+  {
+    "name":"Vinay palaparthy",
+    "faculty_type":"regular",
+    "specialization":"Micro-Electro-Mechanical Systems (MEMS), Physics of Sensors, 2D materials, Memristor, Self-healing System Design, Embedded System Design, IoT, AI\/ML"
+  },
+  {
+    "name":"Yash agrawal",
+    "faculty_type":"regular",
+    "specialization":"VLSI, Nanotechnology, Numerical Method Techniques--FDTD, Design Techniques and Modelling Schemes of High-speed on-chip VLSI Interconnects, Modeling and Simulation Schemes, Advanced Devices and Their Modeling, Analysis"
+  },
+  {
+    "name":"Yash vasavada",
+    "faculty_type":"regular",
+    "specialization":"Communication, Signal Processing, Machine Learning Meet Prof. Yash Vasavada: A Passionate Researcher in Wireless Communications and Signal Processing \u2026"
+  }
+]

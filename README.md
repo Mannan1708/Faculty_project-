@@ -1,3 +1,39 @@
+# Deploying this FastAPI app to Railway
+
+Steps to deploy your project to Railway (two common ways):
+
+1) Deploy via GitHub (recommended)
+
+- Commit and push the repository (including `faculty.index` and `faculty_meta.json`) to GitHub.
+- In Railway dashboard, create a new project → "Deploy from GitHub" → connect the repo.
+- Railway will detect `Procfile` and run the web command.
+
+2) Deploy via Railway CLI
+
+Install the Railway CLI, login, then run:
+
+```bash
+railway login
+railway init   # follow prompts to create a project
+railway up     # deploys the current folder
+```
+
+Notes:
+- This project expects the data files `faculty.index` and `faculty_meta.json` to be present in the repository root so the app can load them at runtime.
+- The app uses `sentence-transformers` which downloads model weights on first run; ensure the environment can reach the internet or pre-download weights if needed.
+- Railway will provide a `PORT` environment variable; the `Procfile` uses it for `uvicorn`.
+- If using the `Dockerfile`, you can push a container image instead of using the `Procfile`.
+
+Useful commands locally:
+
+```bash
+# create virtualenv
+python -m venv .venv
+.venv\Scripts\activate
+pip install -r requirements.txt
+# run locally (uvicorn will pick an available port)
+uvicorn vector_api:app --reload
+```
 # 🎓 Faculty Finder – Data Pipeline Project
 
 ## 📌 Project Objective
@@ -21,7 +57,7 @@ This project focuses on:
 ### 1️⃣ Ingestion (Scraper)
 - Crawls the college faculty directory
 - Fetches HTML of individual faculty profile pages
-- Extracts:
+- Extracts:x  x 
   - Name  
   - Biography  
   - Research Interests  

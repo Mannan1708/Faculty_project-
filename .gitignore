@@ -1,0 +1,25 @@
+__pycache__/
+*.pyc
+.venv/
+env/
+venv/
+.env
+.idea/
+.vscode/
+dist/
+build/
+*.egg-info/
+
+# Jupyter Notebook
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# OS-specific
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
+
+# Railway
+.railway/

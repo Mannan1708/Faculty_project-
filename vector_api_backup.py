@@ -1,10 +1,10 @@
 from fastapi import FastAPI, Query
 from fastapi.responses import HTMLResponse
 from fastapi.middleware.cors import CORSMiddleware
+import faiss
 import json
 import numpy as np
-import requests
-import os
+from sentence_transformers import SentenceTransformer
 
 app = FastAPI()
 
@@ -16,53 +16,16 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-# Hugging Face API configuration
-HF_API_URL = "https://api-inference.huggingface.co/pipeline/feature-extraction/sentence-transformers/all-MiniLM-L6-v2"
-HF_API_TOKEN = os.getenv("HF_API_TOKEN", "")  # Optional: set in Render environment variables for better rate limits
-
-# Load pre-computed embeddings and metadata
-print("Loading pre-computed embeddings...")
-with open("faculty_embeddings.json", "r") as f:
-    faculty_embeddings = json.load(f)
-faculty_embeddings = np.array(faculty_embeddings, dtype=np.float32)
-
+# Load model and data
+print("Loading model...")
+# Use smaller model for Render free tier (60MB vs 420MB)
+model = SentenceTransformer("sentence-transformers/paraphrase-MiniLM-L3-v2")
+print("Loading FAISS index...")
+index = faiss.read_index("faculty.index")
 print("Loading metadata...")
 with open("faculty_meta.json", "r", encoding="utf-8") as f:
     metadata = json.load(f)
-
-print(f"Ready! {len(metadata)} faculty members loaded with pre-computed embeddings.")
-
-def get_query_embedding(query: str) -> np.ndarray:
-    """Get embedding for query using Hugging Face Inference API"""
-    headers = {"Authorization": f"Bearer {HF_API_TOKEN}"} if HF_API_TOKEN else {}
-    
-    try:
-        response = requests.post(HF_API_URL, headers=headers, json={"inputs": query}, timeout=10)
-        response.raise_for_status()
-        embedding = response.json()
-        return np.array(embedding, dtype=np.float32)
-    except Exception as e:
-        print(f"Error getting embedding from HF API: {e}")
-        # Fallback: return zero vector (will match poorly but won't crash)
-        return np.zeros(384, dtype=np.float32)
-
-def cosine_similarity(a: np.ndarray, b: np.ndarray) -> float:
-    """Calculate cosine similarity between two vectors"""
-    return np.dot(a, b) / (np.linalg.norm(a) * np.linalg.norm(b) + 1e-8)
-
-def search_faculty(query_embedding: np.ndarray, top_k: int = 5):
-    """Search faculty using cosine similarity"""
-    similarities = []
-    
-    for idx, fac_embedding in enumerate(faculty_embeddings):
-        similarity = cosine_similarity(query_embedding, fac_embedding)
-        similarities.append((idx, similarity))
-    
-    # Sort by similarity (descending)
-    similarities.sort(key=lambda x: x[1], reverse=True)
-    
-    # Return top_k results
-    return similarities[:top_k]
+print(f"Ready! {len(metadata)} faculty members loaded.")
 
 @app.get("/", response_class=HTMLResponse)
 def home():
@@ -414,16 +377,18 @@ def home():
 
 @app.get("/api/search")
 def search(query: str, top_k: int = 5):
-    # Get query embedding from Hugging Face API
-    query_embedding = get_query_embedding(query)
+    # Encode query
+    query_embedding = model.encode([query])
+    query_vec = np.array(query_embedding, dtype=np.float32)
     
-    # Search using cosine similarity
-    results_data = search_faculty(query_embedding, top_k)
+    # Search
+    distances, indices = index.search(query_vec, top_k)
     
     # Build results
     results = []
-    for rank, (idx, similarity) in enumerate(results_data, start=1):
+    for rank, (idx, dist) in enumerate(zip(indices[0], distances[0]), start=1):
         fac = metadata[int(idx)]
+        similarity = 1 / (1 + float(dist))
         spec = fac["specialization"]
         if len(spec) > 120:
             spec = spec[:120] + "..."

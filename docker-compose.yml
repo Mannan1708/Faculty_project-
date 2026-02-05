@@ -1,0 +1,22 @@
+version: '3.8'
+
+services:
+  faculty-finder:
+    build: .
+    container_name: faculty-finder-app
+    ports:
+      - "8000:8000"
+    environment:
+      - PORT=8000
+    restart: unless-stopped
+    volumes:
+      # Optional: Mount data files for easy updates without rebuild
+      - ./faculty.index:/app/faculty.index
+      - ./faculty_meta.json:/app/faculty_meta.json
+      - ./faculty.db:/app/faculty.db
+    healthcheck:
+      test: [ "CMD", "curl", "-f", "http://localhost:8000/" ]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s

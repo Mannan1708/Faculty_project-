@@ -23,3 +23,5 @@ Thumbs.db
 
 # Railway
 .railway/
+
+# IMPORTANT: faculty_embeddings.json is NOT ignored - it's required for deployment!

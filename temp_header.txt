@@ -1,0 +1,30 @@
+﻿from fastapi import FastAPI, Query
+from fastapi.responses import HTMLResponse
+from fastapi.middleware.cors import CORSMiddleware
+import faiss
+import json
+import numpy as np
+from sentence_transformers import SentenceTransformer
+
+app = FastAPI()
+
+# Add CORS middleware
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
+
+# Load model and data
+print("Loading model...")
+# Use smaller model for Render free tier (60MB vs 420MB)
+model = SentenceTransformer("sentence-transformers/paraphrase-MiniLM-L3-v2")
+print("Loading FAISS index...")
+index = faiss.read_index("faculty.index")
+print("Loading metadata...")
+with open("faculty_meta.json", "r", encoding="utf-8") as f:
+    metadata = json.load(f)
+print(f"Ready! {len(metadata)} faculty members loaded.")
+
+@app.get("/", response_class=HTMLResponse)

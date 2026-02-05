@@ -1,4 +1,4 @@
-from fastapi import FastAPI
+from fastapi import FastAPI, Query
 from fastapi.responses import HTMLResponse
 from fastapi.middleware.cors import CORSMiddleware
 import faiss
@@ -6,20 +6,20 @@ import json
 import numpy as np
 from sentence_transformers import SentenceTransformer
 
-app = FastAPI(title="Faculty Semantic Search")
+app = FastAPI()
 
 # Add CORS middleware
 app.add_middleware(
     CORSMiddleware,
     allow_origins=["*"],
-    allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
 )
 
 # Load model and data
 print("Loading model...")
-model = SentenceTransformer("all-MiniLM-L6-v2")
+# Use smaller model for Render free tier (60MB vs 420MB)
+model = SentenceTransformer("sentence-transformers/paraphrase-MiniLM-L3-v2")
 print("Loading FAISS index...")
 index = faiss.read_index("faculty.index")
 print("Loading metadata...")

@@ -41,85 +41,268 @@ def home():
             * { margin: 0; padding: 0; box-sizing: border-box; }
             body {
                 font-family: 'Inter', sans-serif;
-                background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+                background: linear-gradient(135deg, #0a1929 0%, #1a2332 50%, #0d1b2a 100%);
                 min-height: 100vh;
-                color: #fff;
+                color: #ffffff;
                 padding: 40px 20px;
             }
             .container { max-width: 1200px; margin: 0 auto; }
             .header { text-align: center; margin-bottom: 60px; animation: fadeIn 0.8s; }
-            .logo { font-size: 3.5rem; font-weight: 800; margin-bottom: 10px; }
-            .tagline { font-size: 1.2rem; opacity: 0.9; }
+            .logo { 
+                font-size: 3.5rem; 
+                font-weight: 800; 
+                margin-bottom: 10px;
+                background: linear-gradient(135deg, #42a5f5 0%, #1976d2 100%);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                background-clip: text;
+            }
+            .tagline { font-size: 1.2rem; color: #ffffff; letter-spacing: 1px; }
             .search-section {
-                background: rgba(255, 255, 255, 0.1);
+                background: rgba(255, 255, 255, 0.05);
                 backdrop-filter: blur(20px);
                 border-radius: 24px;
                 padding: 50px;
                 margin-bottom: 40px;
-                box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
-                border: 1px solid rgba(255, 255, 255, 0.2);
+                box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+                border: 1px solid rgba(66, 165, 245, 0.2);
             }
             .search-box { display: flex; gap: 15px; margin-bottom: 20px; }
             input {
                 flex: 1;
-                padding: 18px 20px;
+                padding: 18px 24px;
                 font-size: 1.05rem;
                 border-radius: 16px;
-                border: 2px solid rgba(255, 255, 255, 0.3);
-                background: rgba(255, 255, 255, 0.15);
-                color: #fff;
+                border: 2px solid rgba(66, 165, 245, 0.3);
+                background: rgba(255, 255, 255, 0.05);
+                color: #e3f2fd;
                 font-family: 'Inter', sans-serif;
+                transition: all 0.3s;
             }
-            input::placeholder { color: rgba(255, 255, 255, 0.6); }
+            input:focus {
+                outline: none;
+                border-color: #42a5f5;
+                background: rgba(255, 255, 255, 0.08);
+                box-shadow: 0 0 0 3px rgba(66, 165, 245, 0.1);
+            }
+            input::placeholder { color: rgba(144, 202, 249, 0.5); }
             button {
-                padding: 18px 40px;
+                padding: 18px 45px;
                 border: none;
                 border-radius: 16px;
-                background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+                background: linear-gradient(135deg, #1976d2 0%, #1565c0 100%);
                 color: white;
                 font-size: 1.05rem;
                 font-weight: 600;
                 cursor: pointer;
                 transition: all 0.3s;
+                box-shadow: 0 8px 20px rgba(25, 118, 210, 0.4);
             }
-            button:hover { transform: translateY(-2px); }
+            button:hover { 
+                transform: translateY(-3px); 
+                box-shadow: 0 12px 30px rgba(25, 118, 210, 0.5);
+                background: linear-gradient(135deg, #42a5f5 0%, #1976d2 100%);
+            }
             .result-card {
-                background: rgba(255, 255, 255, 0.1);
+                background: rgba(255, 255, 255, 0.05);
                 backdrop-filter: blur(20px);
+                border-radius: 24px;
+                padding: 35px;
+                margin-bottom: 24px;
+                border: 1px solid rgba(66, 165, 245, 0.2);
+                transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+                position: relative;
+                overflow: hidden;
+                box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+            }
+            .result-card::before {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                height: 4px;
+                background: linear-gradient(90deg, #1976d2 0%, #42a5f5 100%);
+                opacity: 0;
+                transition: opacity 0.3s;
+            }
+            .result-card:hover::before { opacity: 1; }
+            .result-card:hover { 
+                transform: translateY(-8px); 
+                border-color: rgba(66, 165, 245, 0.4);
+                background: rgba(255, 255, 255, 0.08);
+                box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+            }
+            .rank-badge {
+                position: absolute;
+                top: 20px;
+                right: 20px;
+                width: 50px;
+                height: 50px;
+                border-radius: 50%;
+                background: linear-gradient(135deg, #1976d2 0%, #42a5f5 100%);
+                color: #fff;
+                font-size: 1.3rem;
+                font-weight: 800;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                box-shadow: 0 4px 15px rgba(25, 118, 210, 0.5);
+            }
+            .rank-badge.top-3 {
+                background: linear-gradient(135deg, #ffd700 0%, #ffed4e 100%);
+                color: #1a2332;
+                animation: pulse 2s infinite;
+            }
+            @keyframes pulse {
+                0%, 100% { transform: scale(1); }
+                50% { transform: scale(1.05); }
+            }
+            .result-header {
+                display: flex;
+                align-items: flex-start;
+                margin-bottom: 16px;
+                padding-right: 60px;
+            }
+            .result-name { 
+                font-size: 1.6rem; 
+                font-weight: 700; 
+                line-height: 1.3;
+                color: #ffffff;
+            }
+            .meta-row {
+                display: flex;
+                gap: 12px;
+                margin-bottom: 16px;
+                flex-wrap: wrap;
+            }
+            .meta-badge {
+                display: inline-flex;
+                align-items: center;
+                gap: 6px;
+                padding: 8px 16px;
+                background: rgba(66, 165, 245, 0.15);
+                border: 1px solid rgba(66, 165, 245, 0.3);
+                border-radius: 12px;
+                font-size: 0.9rem;
+                font-weight: 500;
+                color: #ffffff;
+            }
+            .similarity-badge {
+                background: linear-gradient(135deg, #42a5f5 0%, #1976d2 100%);
+                color: #fff;
+                font-weight: 700;
+                padding: 8px 18px;
+                box-shadow: 0 4px 12px rgba(25, 118, 210, 0.4);
+                border: none;
+            }
+            .similarity-badge.high { background: linear-gradient(135deg, #4caf50 0%, #388e3c 100%); }
+            .similarity-badge.medium { background: linear-gradient(135deg, #ff9800 0%, #f57c00 100%); }
+            .similarity-badge.low { background: linear-gradient(135deg, #757575 0%, #616161 100%); }
+            .spec-text {
+                color: #ffffff;
+                line-height: 1.6;
+                font-size: 1rem;
+            }
+            .spec-label {
+                color: #ffffff;
+                font-weight: 600;
+                margin-right: 8px;
+            }
+            @keyframes fadeIn { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+            .result-card { animation: fadeIn 0.5s ease-out; }
+            .info-section {
+                background: rgba(255, 255, 255, 0.05);
+                border-radius: 16px;
+                padding: 20px 30px;
+                margin-bottom: 30px;
+                border: 1px solid rgba(66, 165, 245, 0.2);
+                text-align: center;
+            }
+            .info-section h3 {
+                color: #ffffff;
+                font-size: 0.95rem;
+                font-weight: 600;
+                margin-bottom: 12px;
+            }
+            .faculty-types {
+                display: flex;
+                gap: 10px;
+                justify-content: center;
+                flex-wrap: wrap;
+            }
+            .faculty-type-badge {
+                padding: 6px 14px;
+                background: rgba(66, 165, 245, 0.15);
+                border: 1px solid rgba(66, 165, 245, 0.3);
+                border-radius: 8px;
+                font-size: 0.85rem;
+                color: #ffffff;
+                font-weight: 500;
+            }
+            .suggestions {
+                display: flex;
+                gap: 10px;
+                flex-wrap: wrap;
+                margin-top: 15px;
+                justify-content: center;
+            }
+            .suggestion-tag {
+                padding: 8px 16px;
+                background: rgba(66, 165, 245, 0.2);
+                border: 1px solid rgba(66, 165, 245, 0.4);
                 border-radius: 20px;
-                padding: 30px;
-                margin-bottom: 20px;
-                border: 1px solid rgba(255, 255, 255, 0.2);
+                font-size: 0.9rem;
+                color: #ffffff;
+                cursor: pointer;
                 transition: all 0.3s;
             }
-            .result-card:hover { transform: translateY(-5px); background: rgba(255, 255, 255, 0.15); }
-            .result-name { font-size: 1.5rem; font-weight: 700; margin-bottom: 10px; }
-            .meta-badge {
-                display: inline-block;
-                padding: 6px 14px;
-                background: rgba(255, 255, 255, 0.2);
-                border-radius: 12px;
-                font-size: 0.85rem;
-                margin-right: 10px;
+            .suggestion-tag:hover {
+                background: rgba(66, 165, 245, 0.35);
+                transform: translateY(-2px);
+                box-shadow: 0 4px 12px rgba(66, 165, 245, 0.3);
             }
-            @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
         </style>
     </head>
     <body>
         <div class="container">
             <div class="header">
                 <div class="logo">🎓 Faculty Finder</div>
-                <div class="tagline">AI-Powered Semantic Search</div>
+                <div class="tagline">Dhirubhai Ambani University (DAU)</div>
+            </div>
+            <div class="info-section">
+                <h3>Search across all faculty types:</h3>
+                <div class="faculty-types">
+                    <span class="faculty-type-badge">Regular</span>
+                    <span class="faculty-type-badge">Adjunct</span>
+                    <span class="faculty-type-badge">International Adjunct</span>
+                    <span class="faculty-type-badge">Professor of Practice</span>
+                    <span class="faculty-type-badge">Distinguished</span>
+                </div>
             </div>
             <div class="search-section">
                 <div class="search-box">
                     <input type="text" id="query" placeholder="Search by research interests, expertise, or topic...">
                     <button onclick="search()">Search</button>
                 </div>
+                <div class="suggestions">
+                    <span class="suggestion-tag" onclick="quickSearch('machine learning')">🤖 Machine Learning</span>
+                    <span class="suggestion-tag" onclick="quickSearch('artificial intelligence')">🧠 AI</span>
+                    <span class="suggestion-tag" onclick="quickSearch('data science')">📊 Data Science</span>
+                    <span class="suggestion-tag" onclick="quickSearch('computer vision')">👁️ Computer Vision</span>
+                    <span class="suggestion-tag" onclick="quickSearch('natural language processing')">💬 NLP</span>
+                    <span class="suggestion-tag" onclick="quickSearch('blockchain')">⛓️ Blockchain</span>
+                    <span class="suggestion-tag" onclick="quickSearch('cybersecurity')">🔒 Cybersecurity</span>
+                </div>
             </div>
             <div id="results"></div>
         </div>
         <script>
+            function quickSearch(query) {
+                document.getElementById('query').value = query;
+                search();
+            }
+            
             async function search() {
                 const query = document.getElementById('query').value.trim();
                 if (!query) return;
@@ -146,14 +329,29 @@ def home():
                     
                     let html = '';
                     data.results.forEach(r => {
+                        // Determine similarity badge class
+                        const simPercent = r.similarity * 100;
+                        let simClass = 'similarity-badge';
+                        if (simPercent >= 70) simClass += ' high';
+                        else if (simPercent >= 50) simClass += ' medium';
+                        else simClass += ' low';
+                        
+                        // Top 3 get special badge animation
+                        const rankClass = r.rank <= 3 ? 'rank-badge top-3' : 'rank-badge';
+                        
                         html += `
                             <div class="result-card">
-                                <div class="result-name">${r.rank}. ${r.name}</div>
-                                <div style="margin-bottom:15px;">
-                                    <span class="meta-badge">📚 ${r.faculty_type}</span>
-                                    <span class="meta-badge">✨ ${(r.similarity * 100).toFixed(1)}% Match</span>
+                                <div class="${rankClass}">#${r.rank}</div>
+                                <div class="result-header">
+                                    <div class="result-name">${r.name}</div>
                                 </div>
-                                <div><strong>Specialization:</strong> ${r.specialization}</div>
+                                <div class="meta-row">
+                                    <span class="meta-badge">📚 ${r.faculty_type}</span>
+                                    <span class="${simClass}">✨ ${simPercent.toFixed(1)}% Match</span>
+                                </div>
+                                <div class="spec-text">
+                                    <span class="spec-label">Specialization:</span>${r.specialization}
+                                </div>
                             </div>
                         `;
                     });

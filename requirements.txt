@@ -1,9 +1,0 @@
-fastapi
-uvicorn[standard]
-pandas
-
-scikit-learn
-pydantic
-requests
-numpy
-python-multipart

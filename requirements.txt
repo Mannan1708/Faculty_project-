@@ -1,4 +1,9 @@
-fastapi>=0.104.0
-uvicorn[standard]>=0.24.0
-numpy>=1.24.0
-requests>=2.31.0
+fastapi
+uvicorn[standard]
+pandas
+sqlite3
+scikit-learn
+pydantic
+requests
+numpy
+python-multipart

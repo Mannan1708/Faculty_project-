@@ -98,5 +98,3 @@ One day, we will add:
 ### 4
 ![4](4.png)
 
-### 5
-![5](5.png)
